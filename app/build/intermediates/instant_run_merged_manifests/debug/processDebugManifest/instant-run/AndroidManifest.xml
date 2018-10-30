@@ -38,6 +38,11 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.app.facestudent.facestudentapp.ListaArea"
+            android:label="@string/title_activity_lista_area"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.app.facestudent.facestudentapp.CadastroUsuario" />
+        <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
             android:excludeFromRecents="true"
             android:exported="true"

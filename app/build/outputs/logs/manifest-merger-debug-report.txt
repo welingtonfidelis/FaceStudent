@@ -1,9 +1,10 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:2:1-23:12
+ADDED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:2:1-28:12
+MERGED from [com.android.support:design:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/99ea293ad36a71dbe56099d1b785ec40/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/12654dd5fe924ed4899823b457174bfb/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/welington/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/b92cd197d3572411d143011343ca9756/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-core:16.0.1] /home/welington/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.1.aar/d05626e30667a550d5816ff2ac62395c/AndroidManifest.xml:2:1-9:12
@@ -13,6 +14,8 @@ MERGED from [com.google.firebase:firebase-database:16.0.1] /home/welington/.grad
 MERGED from [com.google.firebase:firebase-storage:16.0.1] /home/welington/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.1.aar/5ad42e4ca4386019e58d50e249ae0a55/AndroidManifest.xml:2:1-7:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/a5f96eca774e218a8d8badb98dc3ca34/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/ac1135209eb104935a5906a307bb8e73/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/f651e2176519ff957d1ba635eb07b093/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/5d385eba86f7a427b3b4001e9e3cebd4/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/welington/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/24bf400e341ea98e2525ab2d3ee98b4a/AndroidManifest.xml:17:1-34:12
 MERGED from [com.google.firebase:firebase-analytics:16.0.1] /home/welington/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/cb7b650c630c63b203a5d7c8e8a781c3/AndroidManifest.xml:17:1-55:12
 MERGED from [com.google.android.gms:play-services-flags:15.0.1] /home/welington/.gradle/caches/transforms-1/files-1.1/play-services-flags-15.0.1.aar/5bc30abad5ea24c754713ec5f9b75060/AndroidManifest.xml:17:1-22:12
@@ -48,6 +51,7 @@ MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/welington/.gr
 MERGED from [com.android.support:support-compat:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/8b32adbcae098043cf2d844d71b14e35/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:versionedparcelable:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/7a0345c86fb872c5992e1168b7f0f819/AndroidManifest.xml:17:1-25:12
 MERGED from [com.android.support:cursoradapter:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/17bbe487c543d995292bb172551f1661/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/78bfff02ba69eba71d88614115b590a2/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/welington/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/91b6aa8231b7775ddf842a9369c6e101/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/welington/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/8e6c27133951304a3b6ad60224ea1e42/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/welington/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/dce515f65d976700b0206191b794d594/AndroidManifest.xml:17:1-22:12
@@ -58,25 +62,25 @@ MERGED from [com.android.support:print:28.0.0] /home/welington/.gradle/caches/tr
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/welington/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/82f1a78f8eb1d00839cddb9e50465e20/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:interpolator:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/2f17129308709e5bf11712326d378fa9/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.0.aar/283d45880150e3e91f7cc35146aff710/AndroidManifest.xml:17:1-24:12
-INJECTED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:2:1-28:12
 	package
 		ADDED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:3:5-49
 		INJECTED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml
 		INJECTED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml
-		ADDED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:2:1-23:12
+		ADDED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:2:1-28:12
 		INJECTED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml
-		ADDED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:2:1-23:12
+		ADDED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:2:1-28:12
 		INJECTED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:5:5-66
+ADDED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:5:5-67
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/welington/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/24bf400e341ea98e2525ab2d3ee98b4a/AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/welington/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/24bf400e341ea98e2525ab2d3ee98b4a/AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-analytics:16.0.1] /home/welington/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/cb7b650c630c63b203a5d7c8e8a781c3/AndroidManifest.xml:23:5-67
@@ -92,7 +96,9 @@ MERGED from [com.google.firebase:firebase-storage-common:16.0.1] /home/welington
 	android:name
 		ADDED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:7:5-21:19
+ADDED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:7:5-26:19
+MERGED from [com.android.support:design:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/99ea293ad36a71dbe56099d1b785ec40/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/99ea293ad36a71dbe56099d1b785ec40/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/welington/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/b92cd197d3572411d143011343ca9756/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/welington/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/b92cd197d3572411d143011343ca9756/AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-core:16.0.1] /home/welington/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.1.aar/d05626e30667a550d5816ff2ac62395c/AndroidManifest.xml:7:5-20
@@ -165,10 +171,24 @@ category#android.intent.category.LAUNCHER
 ADDED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:18:17-77
 	android:name
 		ADDED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:18:27-74
+activity#com.app.facestudent.facestudentapp.ListaArea
+ADDED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:21:9-24:59
+	android:label
+		ADDED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:23:13-62
+	android:theme
+		ADDED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:24:13-56
+	android:name
+		ADDED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:22:13-38
+activity#com.app.facestudent.facestudentapp.CadastroUsuario
+ADDED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:25:9-62
+	android:name
+		ADDED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml:25:19-50
 uses-sdk
 INJECTED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml
 INJECTED from /home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/99ea293ad36a71dbe56099d1b785ec40/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/99ea293ad36a71dbe56099d1b785ec40/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/12654dd5fe924ed4899823b457174bfb/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/12654dd5fe924ed4899823b457174bfb/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/welington/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/b92cd197d3572411d143011343ca9756/AndroidManifest.xml:5:5-7:41
@@ -187,6 +207,10 @@ MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/welingto
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/a5f96eca774e218a8d8badb98dc3ca34/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/ac1135209eb104935a5906a307bb8e73/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/ac1135209eb104935a5906a307bb8e73/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/f651e2176519ff957d1ba635eb07b093/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/f651e2176519ff957d1ba635eb07b093/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/5d385eba86f7a427b3b4001e9e3cebd4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/5d385eba86f7a427b3b4001e9e3cebd4/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/welington/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/24bf400e341ea98e2525ab2d3ee98b4a/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/welington/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/24bf400e341ea98e2525ab2d3ee98b4a/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-analytics:16.0.1] /home/welington/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/cb7b650c630c63b203a5d7c8e8a781c3/AndroidManifest.xml:20:5-44
@@ -257,6 +281,8 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] /home/welington/.gr
 MERGED from [com.android.support:versionedparcelable:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/7a0345c86fb872c5992e1168b7f0f819/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cursoradapter:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/17bbe487c543d995292bb172551f1661/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cursoradapter:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/17bbe487c543d995292bb172551f1661/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/78bfff02ba69eba71d88614115b590a2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/welington/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/78bfff02ba69eba71d88614115b590a2/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/welington/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/91b6aa8231b7775ddf842a9369c6e101/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/welington/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/91b6aa8231b7775ddf842a9369c6e101/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/welington/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/8e6c27133951304a3b6ad60224ea1e42/AndroidManifest.xml:20:5-44

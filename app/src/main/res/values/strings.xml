@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">FaceStudentApp</string>
+    <string name="title_activity_lista_area">ListaArea</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="nomeUsuario">Nome do usuário</string>
+    <string name="emailUsuario">Email do usuário</string>
+    <string name="dataNascimento">Data de nascimento</string>
+    <string name="descricaoUsuario">Fale de você</string>
+    <string name="sexoUsuario">Sexo</string>
+    <string name="sexoMasculino">Masculino</string>
+    <string name="sexoFeminino">Feminino</string>
+    <string name="areasAfins">Áreas afins</string>
 </resources>
