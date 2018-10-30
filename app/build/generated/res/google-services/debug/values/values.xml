@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">429888039001-pjc7lvqh95p3eisg092sug75m2m9dkin.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://facestudentapp.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">429888039001</string>
+    <string name="google_api_key" translatable="false">AIzaSyAMcsqhMx_D67cySOp77qjKkA-V7b9VrZU</string>
+    <string name="google_app_id" translatable="false">1:429888039001:android:78cd42edb2986fbf</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAMcsqhMx_D67cySOp77qjKkA-V7b9VrZU</string>
+    <string name="google_storage_bucket" translatable="false">facestudentapp.appspot.com</string>
+    <string name="project_id" translatable="false">facestudentapp</string>
+</resources>
