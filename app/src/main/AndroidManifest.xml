@@ -22,7 +22,8 @@
             android:name=".ListaArea"
             android:label="@string/title_activity_lista_area"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".CadastroUsuario"></activity>
+        <activity android:name=".CadastroUsuario" />
+        <activity android:name=".CadastroHabilidade"></activity>
     </application>
 
 </manifest>

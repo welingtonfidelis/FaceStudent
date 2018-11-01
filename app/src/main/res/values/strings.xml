@@ -15,4 +15,10 @@
     <string name="sexoMasculino">Masculino</string>
     <string name="sexoFeminino">Feminino</string>
     <string name="areasAfins">Áreas afins</string>
+    <string name="proximo">Próximo</string>
+    <string name="quaisHabilidades">Quais são suas habilidades?</string>
+    <string name="pular">Pular etapa</string>
+    <string name="salvar">Salvar</string>
+    <string name="dicaCliqueEscolha">Clique sobre um ou mais itens para escolher</string>
+    <string name="boasVindas">Bem vindo</string>
 </resources>

@@ -123,7 +123,7 @@ public class Login extends AppCompatActivity {
                                 @Override
                                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                                     if(dataSnapshot.exists()){
-                                        Intent intent = new Intent(Login.this, ListaArea.class);
+                                        Intent intent = new Intent(Login.this, CadastroHabilidade.class);
                                         startActivity(intent);
                                         finish();
                                     }else{

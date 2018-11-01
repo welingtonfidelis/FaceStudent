@@ -1113,13 +1113,15 @@ id beginning
 id blocking
 id bottom
 id btn_logar
+id btn_proximo
+id btn_pular
+id btn_salvar_area
 id buttonPanel
 id cancel_action
 id center
 id center_horizontal
 id center_vertical
 id chains
-id checkBox2
 id checkbox
 id chronometer
 id clip_horizontal
@@ -1143,11 +1145,11 @@ id dimensions
 id direct
 id disableHome
 id drawer_layout
-id editText
-id editText5
-id editText6
-id editText7
 id edit_query
+id edt_data_nascimento_usuario
+id edt_descricao_usuario
+id edt_email_usuario
+id edt_nome_usuario
 id end
 id end_padder
 id enterAlways
@@ -1173,7 +1175,7 @@ id icon_only
 id ifRoom
 id image
 id imageView
-id imageView2
+id imgv_foto_usuario
 id info
 id invisible
 id italic
@@ -1186,6 +1188,7 @@ id line1
 id line3
 id listMode
 id list_item
+id lista_area
 id masked
 id media_actions
 id message
@@ -1219,9 +1222,9 @@ id pin
 id progress_circular
 id progress_horizontal
 id radio
-id radioButton
-id radioButton2
 id radioGroup
+id rb_sexo_feminino
+id rb_sexo_masculino
 id right
 id right_icon
 id right_side
@@ -1233,6 +1236,7 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scrollView3
 id scrollable
 id search_badge
 id search_bar
@@ -1279,10 +1283,12 @@ id textSpacerNoTitle
 id textStart
 id textView
 id textView3
+id textView4
 id textView5
 id textView6
 id textView7
 id textView8
+id textView9
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1300,6 +1306,8 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id tv_bem_vindo
+id tv_nome_area_adapter
 id uniform
 id unlabeled
 id up
@@ -1358,6 +1366,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_cadastro_area
 layout activity_cadastro_usuario
 layout activity_lista_area
 layout activity_login
@@ -1377,6 +1386,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout item_area
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout nav_header_lista_area
@@ -1446,6 +1456,7 @@ string action_settings
 string app_name
 string appbar_scrolling_view_behavior
 string areasAfins
+string boasVindas
 string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_pattern
@@ -1470,6 +1481,7 @@ string common_signin_button_text_long
 string dataNascimento
 string default_web_client_id
 string descricaoUsuario
+string dicaCliqueEscolha
 string emailUsuario
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
@@ -1493,6 +1505,10 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string project_id
+string proximo
+string pular
+string quaisHabilidades
+string salvar
 string search_menu_title
 string sexoFeminino
 string sexoMasculino

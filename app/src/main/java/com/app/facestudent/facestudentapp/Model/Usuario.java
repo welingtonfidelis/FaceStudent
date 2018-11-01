@@ -1,23 +1,59 @@
 package com.app.facestudent.facestudentapp.Model;
 
+import com.google.firebase.database.Exclude;
+
 import java.util.Date;
 
 public class Usuario {
+    private String id;
     private String nome;
     private String email;
-    private Date dataCriacaoConta;
-    private Date dataNascimento;
+    private long dataCriacaoConta;
+    private long dataNascimento;
     private String genero;
     private String foto;
     private String descricaoPessoal;
     private String log;
-    private Date ultimoAcesso;
+    private long ultimoAcesso;
     private String permissao;
     private boolean status;
 
     public Usuario() {
         this.permissao = "usuario";
         this.status = false;
+    }
+
+    @Exclude
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public long getDataCriacaoConta() {
+        return dataCriacaoConta;
+    }
+
+    public void setDataCriacaoConta(long dataCriacaoConta) {
+        this.dataCriacaoConta = dataCriacaoConta;
+    }
+
+    public long getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(long dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
+
+    public long getUltimoAcesso() {
+        return ultimoAcesso;
+    }
+
+    public void setUltimoAcesso(long ultimoAcesso) {
+        this.ultimoAcesso = ultimoAcesso;
     }
 
     public String getNome() {
@@ -34,22 +70,6 @@ public class Usuario {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public Date getDataCriacaoConta() {
-        return dataCriacaoConta;
-    }
-
-    public void setDataCriacaoConta(Date dataCriacaoConta) {
-        this.dataCriacaoConta = dataCriacaoConta;
-    }
-
-    public Date getDataNascimento() {
-        return dataNascimento;
-    }
-
-    public void setDataNascimento(Date dataNascimento) {
-        this.dataNascimento = dataNascimento;
     }
 
     public String getGenero() {
@@ -82,14 +102,6 @@ public class Usuario {
 
     public void setLog(String log) {
         this.log = log;
-    }
-
-    public Date getUltimoAcesso() {
-        return ultimoAcesso;
-    }
-
-    public void setUltimoAcesso(Date ultimoAcesso) {
-        this.ultimoAcesso = ultimoAcesso;
     }
 
     public String getPermissao() {
