@@ -1,22 +1,15 @@
 package com.app.facestudent.facestudentapp;
 
 import android.app.AlertDialog;
-import android.app.Dialog;
-import android.content.ClipData;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
-import android.os.Vibrator;
-import android.support.annotation.NonNull;
-import android.support.v4.app.DialogFragment;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -54,14 +47,14 @@ public class CadastroHabilidade extends AppCompatActivity {
         lista_area = new ArrayList<Area>();
         lista_area_selecionada = new ArrayList<Area>();
 
-    boas_vindas.setText("Bem vindo" + " "+ReferencesHelper.getFirebaseAuth().getCurrentUser().getDisplayName());
+        boas_vindas.setText("Bem vindo" + " " + ReferencesHelper.getFirebaseAuth().getCurrentUser().getDisplayName());
 
         areaEventListener = new ValueEventListener() {
             @Override
-            public void onDataChange( com.google.firebase.database.DataSnapshot dataSnapshot) {
+            public void onDataChange(com.google.firebase.database.DataSnapshot dataSnapshot) {
 
-                if(dataSnapshot.exists()){
-                    for(DataSnapshot postSnapshot : dataSnapshot.getChildren()){
+                if (dataSnapshot.exists()) {
+                    for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
                         Area area = postSnapshot.getValue(Area.class);
                         lista_area.add(area);
                     }
@@ -69,42 +62,21 @@ public class CadastroHabilidade extends AppCompatActivity {
                     AreaAdapter adapter = new AreaAdapter(lista_area, CadastroHabilidade.this);
                     listView_area.setAdapter(adapter);
 
-                    //listView_area.setAdapter(new ArrayAdapter(CadastroHabilidade.this, android.R.layout.simple_list_item_1, lista_area));
                     listView_area.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                         @Override
                         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                            /*ColorDrawable colorView = (ColorDrawable) listView_area.getChildAt(position).getBackground();
-                            if(colorView == null){
-                                listView_area.getChildAt(position).setBackgroundColor(Color.WHITE);
-                            }
-                            colorView = (ColorDrawable) listView_area.getChildAt(position).getBackground();
-                            if(colorView.getColor() == Color.GREEN){
-                                listView_area.getChildAt(position).setBackgroundColor(Color.WHITE);
-
-                            }
-                            else{
-                                listView_area.getChildAt(position).setBackgroundColor(Color.GREEN);
-
-                                Habilidade habilidade = new Habilidade(
-                                        ReferencesHelper.getDatabaseReference().push().getKey(),
-                                        parent.getAdapter().getItem(position).toString()
-                                );
-
-                                lista_habilidade.add(habilidade);
-                            }*/
 
                             ColorDrawable colorView = (ColorDrawable) listView_area.getChildAt(position).getBackground();
-                            if(colorView == null){
+                            if (colorView == null) {
                                 listView_area.getChildAt(position).setBackgroundColor(Color.WHITE);
                             }
                             colorView = (ColorDrawable) listView_area.getChildAt(position).getBackground();
-                            if(colorView.getColor() == Color.GREEN){
+                            if (colorView.getColor() == Color.GREEN) {
                                 listView_area.getChildAt(position).setBackgroundColor(Color.WHITE);
 
                                 Area a = (Area) parent.getItemAtPosition(position);
                                 lista_area_selecionada.remove(a);
-                            }
-                            else{
+                            } else {
                                 listView_area.getChildAt(position).setBackgroundColor(Color.GREEN);
 
                                 Area a = (Area) parent.getItemAtPosition(position);
@@ -126,14 +98,7 @@ public class CadastroHabilidade extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 salvaHabilidade(lista_area_selecionada);
-                /*if(lista_habilidade.isEmpty()){
-                    exibeAlerta();
-                }
-                else{
-                    ReferencesHelper.getDatabaseReference().child("Habilidade").child(ReferencesHelper.getFirebaseAuth().getUid()).setValue(lista_habilidade);
-                    Toast.makeText(CadastroHabilidade.this, "Habilidades cadastras, obrigado.", Toast.LENGTH_SHORT).show();
-                    finish();
-                }*/
+
             }
         });
 
@@ -176,9 +141,9 @@ public class CadastroHabilidade extends AppCompatActivity {
         alerta.show();
     }
 
-    public void salvaHabilidade(List<Area> lista){
+    public void salvaHabilidade(List<Area> lista) {
         List<Habilidade> lista_habilidade = new ArrayList<Habilidade>();
-        for(Area a : lista){
+        for (Area a : lista) {
             Habilidade h = new Habilidade(
                     ReferencesHelper.getDatabaseReference().getKey(),
                     a.getNome()
@@ -186,10 +151,9 @@ public class CadastroHabilidade extends AppCompatActivity {
             lista_habilidade.add(h);
         }
 
-        if(lista_habilidade.isEmpty()){
+        if (lista_habilidade.isEmpty()) {
             exibeAlerta();
-        }
-        else{
+        } else {
             ReferencesHelper.getDatabaseReference().child("Habilidade").child(ReferencesHelper.getFirebaseAuth().getUid()).setValue(lista_habilidade);
             Toast.makeText(CadastroHabilidade.this, "Habilidades cadastras, obrigado.", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(CadastroHabilidade.this, ListaArea.class);

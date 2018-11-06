@@ -1189,6 +1189,7 @@ id line3
 id listMode
 id list_item
 id lista_area
+id lista_area_afins
 id masked
 id media_actions
 id message
@@ -1206,6 +1207,7 @@ id nav_slideshow
 id nav_view
 id navigation_header_container
 id never
+id nome_area_adapter
 id none
 id normal
 id notification_background
@@ -1308,6 +1310,7 @@ id transition_scene_layoutid_cache
 id transition_transform
 id tv_bem_vindo
 id tv_nome_area_adapter
+id tv_teste_lista_area
 id uniform
 id unlabeled
 id up
@@ -1370,6 +1373,7 @@ layout activity_cadastro_area
 layout activity_cadastro_usuario
 layout activity_lista_area
 layout activity_login
+layout adapter_area_grid
 layout app_bar_lista_area
 layout content_lista_area
 layout design_bottom_navigation_item
@@ -1455,6 +1459,7 @@ string abc_toolbar_collapse_description
 string action_settings
 string app_name
 string appbar_scrolling_view_behavior
+string areas
 string areasAfins
 string boasVindas
 string bottom_sheet_behavior

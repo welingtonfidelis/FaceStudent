@@ -1,4 +1,4 @@
-#Thu Nov 01 00:47:45 BRST 2018
+#Thu Nov 01 12:38:14 BRST 2018
 base.0=/home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/build/intermediates/transforms/dexMerger/debug/8
 path.0=classes.dex
 renamed.0=classes.dex
