@@ -1,10 +1,12 @@
 package com.app.facestudent.facestudentapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v4.widget.ListViewAutoScrollHelper;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
@@ -17,6 +19,9 @@ import android.widget.TextView;
 import com.app.facestudent.facestudentapp.Adapter.AreaAdapterGrid;
 import com.app.facestudent.facestudentapp.Helper.ReferencesHelper;
 import com.app.facestudent.facestudentapp.Model.Area;
+import com.google.android.gms.auth.api.Auth;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
@@ -31,6 +36,7 @@ public class ListaArea extends AppCompatActivity
     private ValueEventListener areaEventListener;
     private List<Area> lista_area;
     private RecyclerView listView_area;
+    private GoogleApiClient mGoogleSignInClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -125,7 +131,11 @@ public class ListaArea extends AppCompatActivity
 
         } else if (id == R.id.nav_slideshow) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_logout) {
+            ReferencesHelper.getFirebaseAuth().signOut();
+            Intent intent = new Intent(ListaArea.this, Login.class);
+            startActivity(intent);
+            finish();
 
         } else if (id == R.id.nav_share) {
 

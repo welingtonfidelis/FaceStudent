@@ -145,16 +145,21 @@ public class CadastroHabilidade extends AppCompatActivity {
         List<Habilidade> lista_habilidade = new ArrayList<Habilidade>();
         for (Area a : lista) {
             Habilidade h = new Habilidade(
-                    ReferencesHelper.getDatabaseReference().getKey(),
-                    a.getNome()
+                    a.getNome(),
+                    ReferencesHelper.getDatabaseReference().push().getKey(),
+                    ReferencesHelper.getFirebaseAuth().getUid()
             );
+            //h.setId(ReferencesHelper.getFirebaseAuth().getUid());
             lista_habilidade.add(h);
         }
 
         if (lista_habilidade.isEmpty()) {
             exibeAlerta();
         } else {
-            ReferencesHelper.getDatabaseReference().child("Habilidade").child(ReferencesHelper.getFirebaseAuth().getUid()).setValue(lista_habilidade);
+            for(Habilidade habilidade: lista_habilidade){
+                ReferencesHelper.getDatabaseReference().child("Habilidade").child(habilidade.getId()).setValue(habilidade);
+            }
+            //ReferencesHelper.getDatabaseReference().child("Habilidade").cx.getUid()).setValue(lista_habilidade);
             Toast.makeText(CadastroHabilidade.this, "Habilidades cadastras, obrigado.", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(CadastroHabilidade.this, ListaArea.class);
             startActivity(intent);

@@ -1,6 +1,7 @@
 package com.app.facestudent.facestudentapp.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -8,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.app.facestudent.facestudentapp.ListaUsuario;
 import com.app.facestudent.facestudentapp.Model.Area;
 import com.app.facestudent.facestudentapp.R;
 
@@ -45,6 +47,15 @@ public class AreaAdapterGrid extends RecyclerView.Adapter<AreaAdapterGrid.ViewHo
         final Area area = lista.get(i);
 
         viewHolder.nome_area.setText(area.getNome());
+
+        viewHolder.nome_area.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, ListaUsuario.class);
+                intent.putExtra("NOMEAREA", area.getNome());
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override

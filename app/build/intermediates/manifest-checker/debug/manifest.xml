@@ -30,19 +30,29 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.app.facestudent.facestudentapp.Login" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name="com.app.facestudent.facestudentapp.Login" />
         <activity
             android:name="com.app.facestudent.facestudentapp.ListaArea"
             android:label="@string/title_activity_lista_area"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.app.facestudent.facestudentapp.CadastroUsuario" />
         <activity android:name="com.app.facestudent.facestudentapp.CadastroHabilidade" />
+        <activity
+            android:name="com.app.facestudent.facestudentapp.ListaUsuario"
+            android:label="@string/title_activity_lista_usuario"
+            android:parentActivityName="com.app.facestudent.facestudentapp.ListaArea"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.app.facestudent.facestudentapp.Perfil" />
+        <activity
+            android:name="com.app.facestudent.facestudentapp.SplashScreen"
+            android:label="@string/title_activity_splash_screen"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
             android:excludeFromRecents="true"

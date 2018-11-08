@@ -11,19 +11,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Login">
+        <activity android:name=".Login"/>
+
+        <activity
+            android:name=".ListaArea"
+            android:label="@string/title_activity_lista_area"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".CadastroUsuario" />
+        <activity android:name=".CadastroHabilidade" />
+        <activity
+            android:name=".ListaUsuario"
+            android:label="@string/title_activity_lista_usuario"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".ListaArea"/>
+        <activity android:name=".Perfil" />
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/title_activity_splash_screen"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ListaArea"
-            android:label="@string/title_activity_lista_area"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".CadastroUsuario" />
-        <activity android:name=".CadastroHabilidade"></activity>
     </application>
 
 </manifest>

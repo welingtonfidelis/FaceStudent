@@ -22,4 +22,6 @@
     <string name="dicaCliqueEscolha">Clique sobre um ou mais itens para escolher</string>
     <string name="boasVindas">Bem vindo</string>
     <string name="areas">Áreas</string>
+    <string name="title_activity_lista_usuario">ListaUsuario</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
 </resources>
