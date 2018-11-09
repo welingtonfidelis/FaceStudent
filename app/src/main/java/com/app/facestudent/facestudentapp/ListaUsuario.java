@@ -50,7 +50,7 @@ public class ListaUsuario extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
         if(extras != null) {
-            nome_area= extras.getString("NOMEAREA");
+            nome_area = extras.getString("NOMEAREA");
         }
 
         habilidadeEventListner = new ValueEventListener() {
@@ -105,12 +105,17 @@ public class ListaUsuario extends AppCompatActivity {
         };
         ReferencesHelper.getDatabaseReference().child("Habilidade").orderByChild("nome").equalTo(nome_area).addValueEventListener(habilidadeEventListner);
 
-
-
-
-
     }
 
+    @Override
+    protected void onDestroy() {
+        Log.e("DESTROY",  "Destroy: "+nome_area);
+        super.onDestroy();
+    }
 
-
+    @Override
+    protected void onResume() {
+        Log.e("DESTROY",  "Resume: "+nome_area);
+        super.onResume();
+    }
 }
