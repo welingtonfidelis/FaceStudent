@@ -40,19 +40,20 @@
         <activity
             android:name="com.app.facestudent.facestudentapp.ListaUsuario"
             android:label="@string/title_activity_lista_usuario"
-            android:parentActivityName="com.app.facestudent.facestudentapp.ListaArea"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.app.facestudent.facestudentapp.Perfil" />
+            android:parentActivityName="com.app.facestudent.facestudentapp.ListaArea" />
+        <activity
+            android:name="com.app.facestudent.facestudentapp.Perfil"
+            android:parentActivityName="com.app.facestudent.facestudentapp.ListaUsuario" />
         <activity
             android:name="com.app.facestudent.facestudentapp.SplashScreen"
-            android:label="@string/title_activity_splash_screen"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:label="@string/title_activity_splash_screen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.app.facestudent.facestudentapp.CadastroPost" />
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
             android:excludeFromRecents="true"

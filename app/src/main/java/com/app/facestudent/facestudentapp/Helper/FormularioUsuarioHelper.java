@@ -20,14 +20,14 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-public class FormularioHelper {
+public class FormularioUsuarioHelper {
     private EditText nome, email, dataNascimento, descricao;
     private RadioButton sexo_masculino, sexo_feminino;
     private ImageView foto_usuario;
     private Usuario usuario;
     private FirebaseUser user;
 
-    public FormularioHelper(CadastroUsuario activity) {
+    public FormularioUsuarioHelper(CadastroUsuario activity) {
         user = ReferencesHelper.getFirebaseAuth().getCurrentUser();
 
         foto_usuario = activity.findViewById(R.id.imgv_foto_usuario);
@@ -73,12 +73,11 @@ public class FormularioHelper {
         usuario.setDataNascimento(date.getTime());
 
         return usuario;
-
     }
 
 }
 
-class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
+/*class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
     ImageView bmImage;
 
     public DownloadImageTask(ImageView bmImage) {
@@ -101,4 +100,4 @@ class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
     protected void onPostExecute(Bitmap result) {
         bmImage.setImageBitmap(result);
     }
-}
+}*/

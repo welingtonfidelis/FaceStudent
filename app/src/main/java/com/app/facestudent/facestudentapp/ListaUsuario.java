@@ -40,8 +40,7 @@ public class ListaUsuario extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_usuario);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
@@ -65,7 +64,7 @@ public class ListaUsuario extends AppCompatActivity {
                     }
                 }
 
-                lista_usuario.clear();
+                //lista_usuario.clear();
                 for(Habilidade h: lista_habilidade){
                     usuarioEventListener = new ValueEventListener() {
                         @Override

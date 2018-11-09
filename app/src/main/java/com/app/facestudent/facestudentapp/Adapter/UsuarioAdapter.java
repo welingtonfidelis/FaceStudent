@@ -1,6 +1,7 @@
 package com.app.facestudent.facestudentapp.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
@@ -14,7 +15,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.app.facestudent.facestudentapp.Model.Usuario;
+import com.app.facestudent.facestudentapp.Perfil;
 import com.app.facestudent.facestudentapp.R;
+import com.google.gson.Gson;
 
 import java.io.InputStream;
 import java.util.List;
@@ -55,6 +58,16 @@ public class UsuarioAdapter extends RecyclerView.Adapter<UsuarioAdapter.ViewHold
         viewHolder.nome_usuario.setText(usuario.getNome());
 
         new DownloadImageTask(viewHolder.foto_usuario).execute(usuario.getFoto());
+
+        viewHolder.foto_usuario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Gson gson = new Gson();
+                Intent it = new Intent(context, Perfil.class);
+                it.putExtra("USUARIO", gson.toJson(usuario));
+                context.startActivity(it);
+            }
+        });
     }
 
 

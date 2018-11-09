@@ -7,15 +7,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.app.facestudent.facestudentapp.Helper.FormularioHelper;
+import com.app.facestudent.facestudentapp.Helper.FormularioUsuarioHelper;
 import com.app.facestudent.facestudentapp.Helper.ReferencesHelper;
 import com.app.facestudent.facestudentapp.Model.Usuario;
-import com.google.firebase.auth.FirebaseUser;
 
 import java.text.ParseException;
 
 public class CadastroUsuario extends AppCompatActivity {
-    private FormularioHelper formularioHelper;
+    private FormularioUsuarioHelper formularioUsuarioHelper;
     private Button btn_salvar;
     private Usuario usuario;
 
@@ -26,13 +25,13 @@ public class CadastroUsuario extends AppCompatActivity {
 
         btn_salvar = findViewById(R.id.btn_proximo);
 
-        formularioHelper = new FormularioHelper(CadastroUsuario.this);
+        formularioUsuarioHelper = new FormularioUsuarioHelper(CadastroUsuario.this);
 
         btn_salvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 try {
-                    usuario = formularioHelper.pegaDoFormulario();
+                    usuario = formularioUsuarioHelper.pegaDoFormulario();
                     ReferencesHelper.getDatabaseReference().child("Usuario").child(usuario.getId()).setValue(usuario);
                     Toast.makeText(getBaseContext(), "Salvo com sucesso.", Toast.LENGTH_SHORT).show();
 

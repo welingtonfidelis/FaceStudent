@@ -24,4 +24,5 @@
     <string name="areas">Áreas</string>
     <string name="title_activity_lista_usuario">ListaUsuario</string>
     <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="tituloPost">Título do post</string>
 </resources>

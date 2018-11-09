@@ -1150,6 +1150,8 @@ id edt_data_nascimento_usuario
 id edt_descricao_usuario
 id edt_email_usuario
 id edt_nome_usuario
+id edt_texto_post
+id edt_titulo_post
 id end
 id end_padder
 id enterAlways
@@ -1157,6 +1159,8 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fb_enviar_post
+id fb_novo_post
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1175,6 +1179,7 @@ id icon_only
 id ifRoom
 id image
 id imageView
+id imgv_foto_perfil
 id imgv_foto_usuario
 id info
 id invisible
@@ -1187,6 +1192,7 @@ id light
 id line1
 id line3
 id listMode
+id list_habilidade_perfil
 id list_item
 id lista_area
 id lista_area_afins
@@ -1228,6 +1234,7 @@ id radio
 id radioGroup
 id rb_sexo_feminino
 id rb_sexo_masculino
+id recycler_post_perfil
 id right
 id right_icon
 id right_side
@@ -1285,6 +1292,8 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
+id textView11
+id textView13
 id textView3
 id textView4
 id textView5
@@ -1310,9 +1319,16 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id tv_bem_vindo
+id tv_data_post
+id tv_data_post_adapter
+id tv_nascimento_perfil
 id tv_nome_area_adapter
+id tv_nome_habilidade_adapter
+id tv_nome_perfil
 id tv_nome_usuario_adater
 id tv_teste_lista_area
+id tv_texto_post_adapter
+id tv_titulo_post_adapter
 id uniform
 id unlabeled
 id up
@@ -1372,6 +1388,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_cadastro_area
+layout activity_cadastro_post
 layout activity_cadastro_usuario
 layout activity_lista_area
 layout activity_lista_usuario
@@ -1379,6 +1396,8 @@ layout activity_login
 layout activity_perfil
 layout activity_splash_screen
 layout adapter_area_grid
+layout adapter_habilidade
+layout adapter_post
 layout adapter_usuario
 layout app_bar_lista_area
 layout content_lista_area
@@ -1530,6 +1549,7 @@ string status_bar_notification_info_overflow
 string title_activity_lista_area
 string title_activity_lista_usuario
 string title_activity_splash_screen
+string tituloPost
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
