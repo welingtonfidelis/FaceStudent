@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
+import android.text.format.DateFormat;
 import android.util.Log;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -66,6 +67,11 @@ public class FormularioUsuarioHelper {
         usuario.setEmail(email.getText().toString());
         usuario.setDataCriacaoConta(new Date().getTime());
         usuario.setDescricaoPessoal(descricao.getText().toString());
+        if(sexo_masculino.isChecked()){
+            usuario.setGenero("Masculino");
+        }else if(sexo_feminino.isChecked()){
+            usuario.setGenero("Feminino");
+        }
 
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH);
         Date date = formatter.parse(dataNascimento.getText().toString());
@@ -75,6 +81,19 @@ public class FormularioUsuarioHelper {
         return usuario;
     }
 
+    public void carregaFormulario(Usuario u){
+        new DownloadImageTask(foto_usuario).execute(u.getFoto());
+        nome.setText(u.getNome());
+        email.setText(u.getEmail());
+        dataNascimento.setText(DateFormat.format("dd/MM/yy", new Date(u.getDataNascimento())).toString());
+        descricao.setText(u.getDescricaoPessoal());
+        if(Util.retornaSexo(u.getGenero())){
+            sexo_feminino.setChecked(true);
+        }else{
+            sexo_masculino.setChecked(true);
+        }
+
+    }
 }
 
 /*class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {

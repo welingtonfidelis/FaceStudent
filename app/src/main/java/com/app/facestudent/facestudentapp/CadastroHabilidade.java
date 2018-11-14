@@ -8,6 +8,8 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -16,6 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.app.facestudent.facestudentapp.Adapter.AreaAdapter;
+import com.app.facestudent.facestudentapp.Adapter.HabilidadeAdapter;
 import com.app.facestudent.facestudentapp.Helper.ReferencesHelper;
 import com.app.facestudent.facestudentapp.Model.Area;
 import com.app.facestudent.facestudentapp.Model.Habilidade;
@@ -33,6 +36,7 @@ public class CadastroHabilidade extends AppCompatActivity {
     private ValueEventListener areaEventListener;
 
     private List<Area> lista_area, lista_area_selecionada;
+    List<Habilidade> lista_habilidade = new ArrayList<Habilidade>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +52,12 @@ public class CadastroHabilidade extends AppCompatActivity {
         lista_area_selecionada = new ArrayList<Area>();
 
         boas_vindas.setText("Bem vindo" + " " + ReferencesHelper.getFirebaseAuth().getCurrentUser().getDisplayName());
+
+        boolean ativado = getIntent().getExtras().getBoolean("ATIVADO");
+
+        /*if(ativado){
+            carregaAreas();
+        }*/
 
         areaEventListener = new ValueEventListener() {
             @Override
@@ -142,7 +152,7 @@ public class CadastroHabilidade extends AppCompatActivity {
     }
 
     public void salvaHabilidade(List<Area> lista) {
-        List<Habilidade> lista_habilidade = new ArrayList<Habilidade>();
+
         for (Area a : lista) {
             Habilidade h = new Habilidade(
                     a.getNome(),
@@ -166,6 +176,39 @@ public class CadastroHabilidade extends AppCompatActivity {
             finish();
         }
     }
+
+    public void carregaAreas(){
+        //carregando habilidades do usuario no recycler view
+        ValueEventListener habilidadeEventListener = new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                AreaAdapter adapter = new AreaAdapter(lista_area, CadastroHabilidade.this);
+                listView_area.setAdapter(adapter);
+
+                if (dataSnapshot.exists()) {
+                    for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
+                        Habilidade h = postSnapshot.getValue(Habilidade.class);
+                        Object o = listView_area.getItemAtPosition(0);
+                        o.toString();
+                        lista_habilidade.add(h);
+                    }
+
+
+
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+
+
+        };
+        ReferencesHelper.getDatabaseReference().child("Habilidade").
+                orderByChild("idUsuario").equalTo(ReferencesHelper.getFirebaseAuth().getUid()).addValueEventListener(habilidadeEventListener);
+    }
+
 }
 
 

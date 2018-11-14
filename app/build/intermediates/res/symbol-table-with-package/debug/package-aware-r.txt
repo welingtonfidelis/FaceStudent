@@ -1149,6 +1149,7 @@ id edit_query
 id edt_data_nascimento_usuario
 id edt_descricao_usuario
 id edt_email_usuario
+id edt_mensagem_destinatario
 id edt_nome_usuario
 id edt_texto_post
 id edt_titulo_post
@@ -1159,8 +1160,12 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fb_editar_usuario
+id fb_enviar_mensagem
 id fb_enviar_post
+id fb_mensagem
 id fb_novo_post
+id fb_sair_mensagem
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1323,6 +1328,7 @@ id tv_data_post
 id tv_data_post_adapter
 id tv_nascimento_perfil
 id tv_nome_area_adapter
+id tv_nome_destinatario
 id tv_nome_habilidade_adapter
 id tv_nome_perfil
 id tv_nome_usuario_adater
@@ -1388,6 +1394,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_cadastro_area
+layout activity_cadastro_mensagem
 layout activity_cadastro_post
 layout activity_cadastro_usuario
 layout activity_lista_area

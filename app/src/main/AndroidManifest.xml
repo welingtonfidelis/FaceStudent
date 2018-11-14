@@ -34,7 +34,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CadastroPost"></activity>
+        <activity
+            android:name=".CadastroPost"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert" />
+        <activity
+            android:name=".CadastroMensagem"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert"/>
     </application>
 
 </manifest>

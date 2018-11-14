@@ -53,7 +53,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.app.facestudent.facestudentapp.CadastroPost" />
+        <activity
+            android:name="com.app.facestudent.facestudentapp.CadastroPost"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert" />
+        <activity
+            android:name="com.app.facestudent.facestudentapp.CadastroMensagem"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert" />
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
             android:excludeFromRecents="true"
