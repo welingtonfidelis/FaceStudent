@@ -1118,6 +1118,7 @@ id btn_pular
 id btn_salvar_area
 id buttonPanel
 id cancel_action
+id cardview_usuario_conversa
 id center
 id center_horizontal
 id center_vertical
@@ -1160,6 +1161,7 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fb_conversa
 id fb_editar_usuario
 id fb_enviar_mensagem
 id fb_enviar_post
@@ -1184,6 +1186,7 @@ id icon_only
 id ifRoom
 id image
 id imageView
+id img_foto_usuario_conversa
 id imgv_foto_perfil
 id imgv_foto_usuario
 id info
@@ -1192,6 +1195,7 @@ id italic
 id item_touch_helper_previous_elevation
 id labeled
 id largeLabel
+id layout_mensagem
 id left
 id light
 id line1
@@ -1201,7 +1205,9 @@ id list_habilidade_perfil
 id list_item
 id lista_area
 id lista_area_afins
+id lista_mensagem_conversa
 id listview_usuario_area
+id listview_usuario_conversa
 id masked
 id media_actions
 id message
@@ -1210,9 +1216,9 @@ id mini
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
-id nav_camera
 id nav_gallery
 id nav_logout
+id nav_perfil
 id nav_send
 id nav_share
 id nav_slideshow
@@ -1220,6 +1226,7 @@ id nav_view
 id navigation_header_container
 id never
 id nome_area_adapter
+id nome_usuario_conversa
 id none
 id normal
 id notification_background
@@ -1310,6 +1317,7 @@ id text_input_password_toggle
 id textinput_counter
 id textinput_error
 id textinput_helper_text
+id texto_mensagem
 id time
 id title
 id titleDividerNoCustom
@@ -1324,6 +1332,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id tv_bem_vindo
+id tv_data_mensagem
 id tv_data_post
 id tv_data_post_adapter
 id tv_nascimento_perfil
@@ -1398,14 +1407,18 @@ layout activity_cadastro_mensagem
 layout activity_cadastro_post
 layout activity_cadastro_usuario
 layout activity_lista_area
+layout activity_lista_conversa
+layout activity_lista_mensagem
 layout activity_lista_usuario
 layout activity_login
 layout activity_perfil
 layout activity_splash_screen
 layout adapter_area_grid
 layout adapter_habilidade
+layout adapter_mensagem
 layout adapter_post
 layout adapter_usuario
+layout adapter_usuario_conversa
 layout app_bar_lista_area
 layout content_lista_area
 layout content_lista_usuario

@@ -19,12 +19,14 @@ import android.widget.TextView;
 import com.app.facestudent.facestudentapp.Adapter.AreaAdapterGrid;
 import com.app.facestudent.facestudentapp.Helper.ReferencesHelper;
 import com.app.facestudent.facestudentapp.Model.Area;
+import com.app.facestudent.facestudentapp.Model.Usuario;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
+import com.google.gson.Gson;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,6 +39,7 @@ public class ListaArea extends AppCompatActivity
     private List<Area> lista_area;
     private RecyclerView listView_area;
     private GoogleApiClient mGoogleSignInClient;
+    private Usuario usuario;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -125,8 +128,9 @@ public class ListaArea extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
+        if (id == R.id.nav_perfil) {
+            Intent intent = new Intent(ListaArea.this, Perfil.class);
+            startActivity(intent);
         } else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_slideshow) {

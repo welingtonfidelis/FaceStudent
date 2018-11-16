@@ -28,6 +28,7 @@ public class Usuario {
         return id;
     }
 
+    @Exclude
     public void setId(String id) {
         this.id = id;
     }

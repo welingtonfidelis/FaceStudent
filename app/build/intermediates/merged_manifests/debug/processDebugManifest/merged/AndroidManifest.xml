@@ -60,6 +60,10 @@
             android:name="com.app.facestudent.facestudentapp.CadastroMensagem"
             android:theme="@style/Theme.AppCompat.Dialog.Alert" />
         <activity
+            android:name="com.app.facestudent.facestudentapp.ListaConversa"
+            android:parentActivityName="com.app.facestudent.facestudentapp.Perfil" />
+        <activity android:name="com.app.facestudent.facestudentapp.ListaMensagem" />
+        <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
             android:excludeFromRecents="true"
             android:exported="true"

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.format.DateFormat;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -43,8 +44,8 @@ public class Perfil extends AppCompatActivity {
     private List<Habilidade> lista_habilidade;
     private List<Post> lista_post;
     private Usuario usuario;
-    private ValueEventListener habilidadeEventListener, postEventListiner;
-    private FloatingActionButton novoPost, novaMensagem;
+    private ValueEventListener habilidadeEventListener, postEventListiner, usuarioEventListener;
+    private FloatingActionButton novoPost, novaMensagem, conversa;
     private ImageButton editar;
 
     @Override
@@ -58,6 +59,27 @@ public class Perfil extends AppCompatActivity {
         Gson gson = new Gson();
         usuario = gson.fromJson(getIntent().getStringExtra("USUARIO"), Usuario.class);
 
+       if(usuario == null){
+
+                ValueEventListener user = new ValueEventListener() {
+                    @Override
+                    public void onDataChange(com.google.firebase.database.DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.exists()) {
+                            usuario = dataSnapshot.getValue(Usuario.class);
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+
+                };
+            ReferencesHelper.getDatabaseReference().child("Usuario").
+                    child(ReferencesHelper.getFirebaseAuth().getUid()).addValueEventListener(user);
+        }
+
+
         lista_habilidade = new ArrayList<Habilidade>();
         lista_post = new ArrayList<Post>();
 
@@ -69,6 +91,17 @@ public class Perfil extends AppCompatActivity {
         novoPost = findViewById(R.id.fb_novo_post);
         editar = findViewById(R.id.fb_editar_usuario);
         novaMensagem = findViewById(R.id.fb_mensagem);
+        conversa = findViewById(R.id.fb_conversa);
+
+        if(!usuario.getId().equals(ReferencesHelper.getFirebaseAuth().getUid())){
+            novoPost.setVisibility(View.GONE);
+            editar.setVisibility(View.GONE);
+            conversa.setVisibility(View.GONE);
+        }
+
+        if(usuario.getId().equals(ReferencesHelper.getFirebaseAuth().getUid())){
+            novaMensagem.setVisibility(View.GONE);
+        }
 
         new DownloadImageTask(foto).execute(usuario.getFoto());
         nome.setText(usuario.getNome());
@@ -163,6 +196,14 @@ public class Perfil extends AppCompatActivity {
             }
         });
 
+        conversa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Perfil.this, ListaConversa.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     @Override
@@ -183,5 +224,9 @@ public class Perfil extends AppCompatActivity {
                 return true;
         }
         return (super.onOptionsItemSelected(menuItem));
+    }
+
+    public void buscaUsuario(){
+
     }
 }

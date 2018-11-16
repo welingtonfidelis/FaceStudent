@@ -39,7 +39,11 @@
             android:theme="@style/Theme.AppCompat.Dialog.Alert" />
         <activity
             android:name=".CadastroMensagem"
-            android:theme="@style/Theme.AppCompat.Dialog.Alert"/>
+            android:theme="@style/Theme.AppCompat.Dialog.Alert" />
+        <activity
+            android:name=".ListaConversa"
+            android:parentActivityName=".Perfil" />
+        <activity android:name=".ListaMensagem"></activity>
     </application>
 
 </manifest>

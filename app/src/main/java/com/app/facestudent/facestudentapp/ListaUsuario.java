@@ -73,8 +73,6 @@ public class ListaUsuario extends AppCompatActivity {
                                     Usuario u = dataSnapshot.getValue(Usuario.class);
                                     u.setId(dataSnapshot.getKey());
                                     lista_usuario.add(u);
-                                    Log.e("USUARIO", u.toString());
-
                             }
 
                             layoutManager = new LinearLayoutManager(ListaUsuario.this);
