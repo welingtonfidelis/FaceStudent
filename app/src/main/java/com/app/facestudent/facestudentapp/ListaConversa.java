@@ -1,11 +1,13 @@
 package com.app.facestudent.facestudentapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.Menu;
 import android.view.MenuItem;
 
 import com.app.facestudent.facestudentapp.Adapter.ConversaAdapter;
@@ -16,6 +18,7 @@ import com.app.facestudent.facestudentapp.Model.Usuario;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
+import com.google.gson.Gson;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -115,14 +118,32 @@ public class ListaConversa extends AppCompatActivity {
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.lista_area, menu);
+        return true;
+    }
+
+    @Override
     public boolean onOptionsItemSelected(MenuItem menuItem) {
+        Intent intent;
         switch (menuItem.getItemId()) {
             case android.R.id.home:
                 finish();
                 return true;
-            case R.id.action_settings:
-                finish();
+            case R.id.action_areas:
+                    intent = new Intent(ListaConversa.this, ListaArea.class);
+                startActivity(intent);
                 return true;
+            case R.id.action_conversas:
+                intent = new Intent(ListaConversa.this, ListaConversa.class);
+                startActivity(intent);
+                return true;
+            case R.id.action_logout:
+                ReferencesHelper.getFirebaseAuth().signOut();
+                intent = new Intent(ListaConversa.this, Login.class);
+                startActivity(intent);
+                finish();
         }
         return (super.onOptionsItemSelected(menuItem));
     }

@@ -10,19 +10,25 @@ import android.support.v4.widget.ListViewAutoScrollHelper;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.app.facestudent.facestudentapp.Adapter.AreaAdapterGrid;
+import com.app.facestudent.facestudentapp.Adapter.UsuarioAdapter;
+import com.app.facestudent.facestudentapp.Helper.DownloadImageTask;
 import com.app.facestudent.facestudentapp.Helper.ReferencesHelper;
+import com.app.facestudent.facestudentapp.Helper.Util;
 import com.app.facestudent.facestudentapp.Model.Area;
 import com.app.facestudent.facestudentapp.Model.Usuario;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
@@ -35,6 +41,7 @@ public class ListaArea extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private TextView teste;
+    private ImageView foto_usuario;
     private ValueEventListener areaEventListener;
     private List<Area> lista_area;
     private RecyclerView listView_area;
@@ -49,6 +56,7 @@ public class ListaArea extends AppCompatActivity
         setSupportActionBar(toolbar);
 
         listView_area = findViewById(R.id.lista_area_afins);
+        foto_usuario = findViewById(R.id.imageView);
 
         lista_area = new ArrayList<Area>();
 
@@ -88,6 +96,8 @@ public class ListaArea extends AppCompatActivity
         };
         ReferencesHelper.getDatabaseReference().child("Area").addValueEventListener(areaEventListener);
 
+        Util.infoInicial(ListaArea.this);
+
     }
 
     @Override
@@ -108,18 +118,27 @@ public class ListaArea extends AppCompatActivity
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+    public boolean onOptionsItemSelected(MenuItem menuItem) {
+        Intent intent;
+        switch (menuItem.getItemId()) {
+            case android.R.id.home:
+                finish();
+                return true;
+            case R.id.action_areas:
+                intent = new Intent(ListaArea.this, ListaArea.class);
+                startActivity(intent);
+                return true;
+            case R.id.action_conversas:
+                intent = new Intent(ListaArea.this, ListaConversa.class);
+                startActivity(intent);
+                return true;
+            case R.id.action_logout:
+                ReferencesHelper.getFirebaseAuth().signOut();
+                intent = new Intent(ListaArea.this, Login.class);
+                startActivity(intent);
+                finish();
         }
-
-        return super.onOptionsItemSelected(item);
+        return (super.onOptionsItemSelected(menuItem));
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
@@ -129,21 +148,37 @@ public class ListaArea extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_perfil) {
-            Intent intent = new Intent(ListaArea.this, Perfil.class);
+            final Usuario[] u = new Usuario[1];
+            ValueEventListener usuarioEventListener = new ValueEventListener() {
+                @Override
+                public void onDataChange(com.google.firebase.database.DataSnapshot dataSnapshot) {
+                    if (dataSnapshot.exists()) {
+                        u[0] = dataSnapshot.getValue(Usuario.class);
+                        u[0].setId(dataSnapshot.getKey());
+                        Gson gson = new Gson();
+                        Intent it = new Intent(ListaArea.this, Perfil.class);
+                        it.putExtra("USUARIO", gson.toJson(u[0]));
+                        startActivity(it);
+                    }
+
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                }
+
+            };
+            ReferencesHelper.getDatabaseReference().child("Usuario").child(ReferencesHelper.getFirebaseAuth().getUid()).addValueEventListener(usuarioEventListener);
+
+        } else if (id == R.id.nav_conversas) {
+            Intent intent = new Intent(ListaArea.this, ListaConversa.class);
             startActivity(intent);
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_logout) {
+        }else if (id == R.id.nav_logout) {
             ReferencesHelper.getFirebaseAuth().signOut();
             Intent intent = new Intent(ListaArea.this, Login.class);
             startActivity(intent);
             finish();
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
 
         }
 

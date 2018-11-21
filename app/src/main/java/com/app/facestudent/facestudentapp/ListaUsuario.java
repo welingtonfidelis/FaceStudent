@@ -1,5 +1,6 @@
 package com.app.facestudent.facestudentapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
@@ -9,6 +10,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.ArrayAdapter;
@@ -103,6 +106,37 @@ public class ListaUsuario extends AppCompatActivity {
         };
         ReferencesHelper.getDatabaseReference().child("Habilidade").orderByChild("nome").equalTo(nome_area).addValueEventListener(habilidadeEventListner);
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.lista_area, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem menuItem) {
+        Intent intent;
+        switch (menuItem.getItemId()) {
+            case android.R.id.home:
+                finish();
+                return true;
+            case R.id.action_areas:
+                intent = new Intent(ListaUsuario.this, ListaArea.class);
+                startActivity(intent);
+                return true;
+            case R.id.action_conversas:
+                intent = new Intent(ListaUsuario.this, ListaConversa.class);
+                startActivity(intent);
+                return true;
+            case R.id.action_logout:
+                ReferencesHelper.getFirebaseAuth().signOut();
+                intent = new Intent(ListaUsuario.this, Login.class);
+                startActivity(intent);
+                finish();
+        }
+        return (super.onOptionsItemSelected(menuItem));
     }
 
     @Override

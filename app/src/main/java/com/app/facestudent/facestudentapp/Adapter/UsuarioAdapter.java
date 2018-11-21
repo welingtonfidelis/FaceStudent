@@ -6,6 +6,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.support.annotation.NonNull;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -37,11 +38,13 @@ public class UsuarioAdapter extends RecyclerView.Adapter<UsuarioAdapter.ViewHold
     public class ViewHolder extends RecyclerView.ViewHolder {
         protected TextView nome_usuario;
         protected ImageView foto_usuario;
+        protected CardView cardView_usuario;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             nome_usuario = itemView.findViewById(R.id.tv_nome_usuario_adater);
             foto_usuario = itemView.findViewById(R.id.imgv_foto_usuario);
+            cardView_usuario = itemView.findViewById(R.id.cardview_usuario);
         }
     }
 
@@ -60,7 +63,7 @@ public class UsuarioAdapter extends RecyclerView.Adapter<UsuarioAdapter.ViewHold
 
         new DownloadImageTask(viewHolder.foto_usuario).execute(usuario.getFoto());
 
-        viewHolder.foto_usuario.setOnClickListener(new View.OnClickListener() {
+        viewHolder.cardView_usuario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Gson gson = new Gson();

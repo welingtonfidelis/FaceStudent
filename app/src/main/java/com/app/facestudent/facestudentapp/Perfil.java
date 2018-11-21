@@ -1,6 +1,13 @@
 package com.app.facestudent.facestudentapp;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -9,15 +16,19 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.format.DateFormat;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Adapter;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.RatingBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.app.facestudent.facestudentapp.Adapter.HabilidadeAdapter;
 import com.app.facestudent.facestudentapp.Adapter.PostAdapter;
@@ -37,16 +48,18 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class Perfil extends AppCompatActivity {
-    private ImageView foto;
-    private TextView nome, data_nascimento;
+    private CircleImageView foto;
+    private TextView nome;
     private RecyclerView listView_post, listView_habilidade;
     private List<Habilidade> lista_habilidade;
     private List<Post> lista_post;
     private Usuario usuario;
     private ValueEventListener habilidadeEventListener, postEventListiner, usuarioEventListener;
     private FloatingActionButton novoPost, novaMensagem, conversa;
-    private ImageButton editar;
+    private FloatingActionButton editar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,39 +72,18 @@ public class Perfil extends AppCompatActivity {
         Gson gson = new Gson();
         usuario = gson.fromJson(getIntent().getStringExtra("USUARIO"), Usuario.class);
 
-       if(usuario == null){
-
-                ValueEventListener user = new ValueEventListener() {
-                    @Override
-                    public void onDataChange(com.google.firebase.database.DataSnapshot dataSnapshot) {
-                        if (dataSnapshot.exists()) {
-                            usuario = dataSnapshot.getValue(Usuario.class);
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                    }
-
-                };
-            ReferencesHelper.getDatabaseReference().child("Usuario").
-                    child(ReferencesHelper.getFirebaseAuth().getUid()).addValueEventListener(user);
-        }
-
-
         lista_habilidade = new ArrayList<Habilidade>();
         lista_post = new ArrayList<Post>();
 
-        foto = findViewById(R.id.imgv_foto_perfil);
+        foto = (CircleImageView) findViewById(R.id.imgv_foto_perfil);
         nome = findViewById(R.id.tv_nome_perfil);
-        data_nascimento = findViewById(R.id.tv_nascimento_perfil);
         listView_habilidade = findViewById(R.id.list_habilidade_perfil);
         listView_post = findViewById(R.id.recycler_post_perfil);
         novoPost = findViewById(R.id.fb_novo_post);
         editar = findViewById(R.id.fb_editar_usuario);
         novaMensagem = findViewById(R.id.fb_mensagem);
         conversa = findViewById(R.id.fb_conversa);
+        final Button btn1 = (Button) findViewById(R.id.button1);
 
         if(!usuario.getId().equals(ReferencesHelper.getFirebaseAuth().getUid())){
             novoPost.setVisibility(View.GONE);
@@ -101,11 +93,12 @@ public class Perfil extends AppCompatActivity {
 
         if(usuario.getId().equals(ReferencesHelper.getFirebaseAuth().getUid())){
             novaMensagem.setVisibility(View.GONE);
+            novaMensagem.setVisibility(View.GONE);
+            btn1.setVisibility(View.GONE);
         }
 
         new DownloadImageTask(foto).execute(usuario.getFoto());
         nome.setText(usuario.getNome());
-        data_nascimento.setText(DateFormat.format("dd/MM/yy", new Date(usuario.getDataNascimento())).toString());
 
         editar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -186,6 +179,16 @@ public class Perfil extends AppCompatActivity {
             }
         });
 
+        btn1.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Intent intent = new Intent(Perfil.this, Feedback.class);
+                Gson gson = new Gson();
+                intent.putExtra("USUARIO", gson.toJson(usuario));
+                startActivity(intent);
+            }
+        });
+
         novaMensagem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -215,18 +218,25 @@ public class Perfil extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem menuItem) {
+        Intent intent;
         switch (menuItem.getItemId()) {
             case android.R.id.home:
                 finish();
                 return true;
-            case R.id.action_settings:
-                finish();
+            case R.id.action_areas:
+                intent = new Intent(Perfil.this, ListaArea.class);
+                startActivity(intent);
                 return true;
+            case R.id.action_conversas:
+                intent = new Intent(Perfil.this, ListaConversa.class);
+                startActivity(intent);
+                return true;
+            case R.id.action_logout:
+                ReferencesHelper.getFirebaseAuth().signOut();
+                intent = new Intent(Perfil.this, Login.class);
+                startActivity(intent);
+                finish();
         }
         return (super.onOptionsItemSelected(menuItem));
-    }
-
-    public void buscaUsuario(){
-
     }
 }

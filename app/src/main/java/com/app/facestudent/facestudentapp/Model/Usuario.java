@@ -17,6 +17,8 @@ public class Usuario {
     private long ultimoAcesso;
     private String permissao;
     private boolean status;
+    private double nota_absoluta;
+    private int qtd_avaliacoes;
 
     public Usuario() {
         this.permissao = "usuario";
@@ -119,5 +121,22 @@ public class Usuario {
 
     public void setStatus(boolean status) {
         this.status = status;
+    }
+
+    public double getNota_absoluta() {
+        return nota_absoluta;
+    }
+
+    public void setNota_absoluta(double nota_absoluta) {
+        this.nota_absoluta += nota_absoluta;
+        this.qtd_avaliacoes++;
+    }
+
+    public int getQtd_avaliacoes() {
+        return qtd_avaliacoes;
+    }
+
+    public void setQtd_avaliacoes(int qtd_avaliacoes) {
+        this.qtd_avaliacoes = qtd_avaliacoes;
     }
 }

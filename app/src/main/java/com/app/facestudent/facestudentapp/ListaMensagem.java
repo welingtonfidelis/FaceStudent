@@ -1,5 +1,6 @@
 package com.app.facestudent.facestudentapp;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -72,13 +73,24 @@ public class ListaMensagem extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem menuItem) {
+        Intent intent;
         switch (menuItem.getItemId()) {
             case android.R.id.home:
                 finish();
                 return true;
-            case R.id.action_settings:
-                finish();
+            case R.id.action_areas:
+                intent = new Intent(ListaMensagem.this, ListaArea.class);
+                startActivity(intent);
                 return true;
+            case R.id.action_conversas:
+                intent = new Intent(ListaMensagem.this, ListaConversa.class);
+                startActivity(intent);
+                return true;
+            case R.id.action_logout:
+                ReferencesHelper.getFirebaseAuth().signOut();
+                intent = new Intent(ListaMensagem.this, Login.class);
+                startActivity(intent);
+                finish();
         }
         return (super.onOptionsItemSelected(menuItem));
     }

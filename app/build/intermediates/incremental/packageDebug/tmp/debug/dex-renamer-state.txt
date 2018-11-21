@@ -1,4 +1,4 @@
-#Fri Nov 16 15:20:57 BRST 2018
+#Wed Nov 21 15:03:29 BRST 2018
 path.1=classes.dex
 path.0=classes.dex
 renamed.10=classes11.dex
@@ -10,19 +10,19 @@ renamed.5=classes6.dex
 renamed.4=classes5.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
-base.9=/home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/build/intermediates/transforms/dexMerger/debug/14
+base.9=V\:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16
 renamed.1=classes2.dex
-base.8=/home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/build/intermediates/transforms/dexMerger/debug/20
+base.8=V\:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
 renamed.0=classes.dex
-base.7=/home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/build/intermediates/transforms/dexMerger/debug/12
-base.6=/home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/build/intermediates/transforms/dexMerger/debug/15
-base.5=/home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/build/intermediates/transforms/dexMerger/debug/18
-base.4=/home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/build/intermediates/transforms/dexMerger/debug/13
-base.3=/home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/build/intermediates/transforms/dexMerger/debug/16
-base.2=/home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/build/intermediates/transforms/dexMerger/debug/19
-base.1=/home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/build/intermediates/transforms/dexMerger/debug/17
-base.0=/home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/build/intermediates/transforms/dexMerger/debug/21
-base.10=/home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/build/intermediates/transforms/dexMerger/debug/11
+base.7=V\:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\18
+base.6=V\:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\17
+base.5=V\:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\19
+base.4=V\:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\21
+base.3=V\:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\20
+base.2=V\:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
+base.1=V\:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
+base.0=V\:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
+base.10=V\:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
 path.10=classes.dex
 path.9=classes.dex
 path.8=classes.dex

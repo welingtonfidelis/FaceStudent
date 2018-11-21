@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/welington/Documents/ProjetosAndroid/FaceSudentApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
             "map": [
                 {
-                    "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/62dc216a2bd07c9f51e2d100ce2960c8/res/values-watch-v20/values.xml",
+                    "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-auth-15.0.1.aar\\e3d94268ef39d683a0c022939b823a03\\res\\values-watch-v20\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/12654dd5fe924ed4899823b457174bfb/res/values-watch-v20/values-watch-v20.xml",
+                    "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

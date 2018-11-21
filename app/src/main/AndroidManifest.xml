@@ -38,12 +38,15 @@
             android:name=".CadastroPost"
             android:theme="@style/Theme.AppCompat.Dialog.Alert" />
         <activity
+            android:name=".Feedback"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert" />
+        <activity
             android:name=".CadastroMensagem"
             android:theme="@style/Theme.AppCompat.Dialog.Alert" />
         <activity
             android:name=".ListaConversa"
             android:parentActivityName=".Perfil" />
-        <activity android:name=".ListaMensagem"></activity>
+        <activity android:name=".ListaMensagem" />
     </application>
 
 </manifest>

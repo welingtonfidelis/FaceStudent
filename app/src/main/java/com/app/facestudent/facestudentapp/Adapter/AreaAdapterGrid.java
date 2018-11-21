@@ -3,6 +3,7 @@ package com.app.facestudent.facestudentapp.Adapter;
 import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,10 +29,12 @@ public class AreaAdapterGrid extends RecyclerView.Adapter<AreaAdapterGrid.ViewHo
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         protected TextView nome_area;
+        protected CardView cardView_area;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             nome_area = itemView.findViewById(R.id.nome_area_adapter);
+            cardView_area = itemView.findViewById(R.id.cardview_area);
         }
     }
 
@@ -48,7 +51,7 @@ public class AreaAdapterGrid extends RecyclerView.Adapter<AreaAdapterGrid.ViewHo
 
         viewHolder.nome_area.setText(area.getNome());
 
-        viewHolder.nome_area.setOnClickListener(new View.OnClickListener() {
+        viewHolder.cardView_area.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, ListaUsuario.class);

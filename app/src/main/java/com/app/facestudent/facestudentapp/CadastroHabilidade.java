@@ -53,7 +53,7 @@ public class CadastroHabilidade extends AppCompatActivity {
 
         boas_vindas.setText("Bem vindo" + " " + ReferencesHelper.getFirebaseAuth().getCurrentUser().getDisplayName());
 
-        boolean ativado = getIntent().getExtras().getBoolean("ATIVADO");
+        //boolean ativado = getIntent().getExtras().getBoolean("ATIVADO");
 
         /*if(ativado){
             carregaAreas();

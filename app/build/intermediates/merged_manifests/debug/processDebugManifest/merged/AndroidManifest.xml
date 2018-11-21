@@ -57,6 +57,9 @@
             android:name="com.app.facestudent.facestudentapp.CadastroPost"
             android:theme="@style/Theme.AppCompat.Dialog.Alert" />
         <activity
+            android:name="com.app.facestudent.facestudentapp.Feedback"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert" />
+        <activity
             android:name="com.app.facestudent.facestudentapp.CadastroMensagem"
             android:theme="@style/Theme.AppCompat.Dialog.Alert" />
         <activity

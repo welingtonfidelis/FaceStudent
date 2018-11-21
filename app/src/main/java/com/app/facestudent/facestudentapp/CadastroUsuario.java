@@ -48,7 +48,7 @@ public class CadastroUsuario extends AppCompatActivity {
                     Toast.makeText(getBaseContext(), "Salvo com sucesso.", Toast.LENGTH_SHORT).show();
 
                     startActivity(intent);
-                    finish();
+                    //finish();
                 } catch (ParseException e) {
                     e.printStackTrace();
                 }

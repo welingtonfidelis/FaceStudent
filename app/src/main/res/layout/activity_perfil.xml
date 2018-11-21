@@ -10,24 +10,26 @@
         android:id="@+id/fb_conversa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="8dp"
         android:clickable="true"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_lock_power_off" />
+        app:backgroundTint="@android:color/holo_blue_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fb_novo_post"
+        app:srcCompat="@android:drawable/ic_menu_agenda" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fb_mensagem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="68dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="8dp"
         android:clickable="true"
+        app:backgroundTint="@android:color/holo_green_light"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fb_conversa"
         app:srcCompat="@drawable/ic_menu_gallery" />
 
     <android.support.design.widget.FloatingActionButton
@@ -38,17 +40,51 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:clickable="true"
+        app:backgroundTint="@android:color/holo_red_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@android:drawable/ic_input_add" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/common_google_signin_btn_text_dark_default">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="50dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@android:drawable/btn_star_big_on"
+                app:layout_constraintBottom_toTopOf="@+id/tv_nome_perfil"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgv_foto_perfil"
+                app:layout_constraintTop_toBottomOf="@+id/fb_editar_usuario" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fb_editar_usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:backgroundTint="@android:color/holo_orange_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgv_foto_perfil"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/ic_menu_edit"
+                tools:ignore="NotSibling" />
 
             <TextView
                 android:id="@+id/tv_nome_perfil"
@@ -74,25 +110,10 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:text="Posts"
+                android:textSize="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/list_habilidade_perfil" />
-
-            <ImageButton
-                android:id="@+id/fb_editar_usuario"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginBottom="8dp"
-                app:layout_constraintBottom_toTopOf="@+id/tv_nome_perfil"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imgv_foto_perfil"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@android:drawable/ic_menu_edit" />
 
             <TextView
                 android:id="@+id/textView11"
@@ -100,13 +121,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:text="Habilidades"
+                android:textSize="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_nascimento_perfil" />
+                app:layout_constraintTop_toBottomOf="@+id/tv_nome_perfil" />
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/list_habilidade_perfil"
@@ -117,11 +139,12 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
+                android:background="@drawable/side_nav_bar"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/imgv_foto_perfil"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
@@ -134,20 +157,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@mipmap/ic_launcher_round" />
-
-            <TextView
-                android:id="@+id/tv_nascimento_perfil"
-                android:layout_width="62dp"
-                android:layout_height="17dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:text="TextView"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_nome_perfil" />
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/recycler_post_perfil"
@@ -162,7 +171,22 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+                app:layout_constraintTop_toBottomOf="@+id/textView13"
+                tools:background="@android:color/holo_orange_light" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgv_foto_perfil"
+                tools:layout_editor_absoluteY="124dp" />
+
+
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
 
