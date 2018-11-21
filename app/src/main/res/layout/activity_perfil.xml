@@ -30,7 +30,7 @@
         app:backgroundTint="@android:color/holo_green_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/fb_conversa"
-        app:srcCompat="@drawable/ic_menu_gallery" />
+        app:srcCompat="@android:drawable/stat_notify_chat" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fb_novo_post"

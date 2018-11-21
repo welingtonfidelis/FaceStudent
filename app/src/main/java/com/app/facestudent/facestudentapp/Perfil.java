@@ -93,7 +93,6 @@ public class Perfil extends AppCompatActivity {
 
         if(usuario.getId().equals(ReferencesHelper.getFirebaseAuth().getUid())){
             novaMensagem.setVisibility(View.GONE);
-            novaMensagem.setVisibility(View.GONE);
             btn1.setVisibility(View.GONE);
         }
 

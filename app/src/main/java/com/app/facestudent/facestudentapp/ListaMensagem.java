@@ -2,11 +2,13 @@ package com.app.facestudent.facestudentapp;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.app.facestudent.facestudentapp.Adapter.MensagemAdapter;
 import com.app.facestudent.facestudentapp.Adapter.UsuarioAdapter;
@@ -24,13 +26,15 @@ import java.util.List;
 public class ListaMensagem extends AppCompatActivity {
     private List<Mensagem> lista_mensagem;
     private RecyclerView list_view;
-    private Usuario usuario;
+    private Usuario usuario, usuario_destinatario;
+    private FloatingActionButton mensagem_usuario;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_mensagem);
 
+        usuario_destinatario = new Usuario();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
@@ -39,14 +43,21 @@ public class ListaMensagem extends AppCompatActivity {
 
         lista_mensagem = new ArrayList<Mensagem>();
         list_view = findViewById(R.id.lista_mensagem_conversa);
-
+        mensagem_usuario = findViewById(R.id.fb_mensagem_usuario);
+        lista_mensagem.clear();
         ValueEventListener mensagemEventListener = new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if(dataSnapshot.exists()){
+
                     for(DataSnapshot postSnaptshot : dataSnapshot.getChildren()){
                         Mensagem m = postSnaptshot.getValue(Mensagem.class);
                         lista_mensagem.add(m);
+                        if(m.getIdDestinatario().equals(ReferencesHelper.getFirebaseAuth().getUid()) && usuario_destinatario.getId() == null){
+                            usuario_destinatario.setId(m.getIdRemetente());
+                        }else if(m.getIdRemetente().equals(ReferencesHelper.getFirebaseAuth().getUid()) && usuario_destinatario.getId() == null){
+                            usuario_destinatario.setId(m.getIdDestinatario());
+                        }
                     }
                 }
 
@@ -56,6 +67,16 @@ public class ListaMensagem extends AppCompatActivity {
 
                 MensagemAdapter mensagemAdapter = new MensagemAdapter(ListaMensagem.this, lista_mensagem);
                 list_view.setAdapter(mensagemAdapter);
+
+                mensagem_usuario.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(ListaMensagem.this, CadastroMensagem.class);
+                        Gson gson = new Gson();
+                        intent.putExtra("USUARIO", gson.toJson(usuario_destinatario));
+                        startActivity(intent);
+                    }
+                });
             }
 
             @Override
@@ -68,6 +89,7 @@ public class ListaMensagem extends AppCompatActivity {
 
         ReferencesHelper.getDatabaseReference().child("Mensagem").
                 orderByChild("idDestinatario").equalTo(usuario.getId()).addValueEventListener(mensagemEventListener);
+
 
     }
 

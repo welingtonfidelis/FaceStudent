@@ -8,12 +8,12 @@
         "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\color\\abc_tint_spinner.xml"
     },
     {
-        "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
-        "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
-    },
-    {
         "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "V:\\AndroidProjects\\Aplicativo-master\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_out_bottom.xml.flat",
@@ -28,16 +28,16 @@
         "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\4421a4883bcd662f250195e7c8a1dc18\\res\\color\\mtrl_bottom_nav_item_tint.xml"
     },
     {
-        "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
-        "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+        "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
+        "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\f5595fe3935db7edad1ad468fe9da05c\\res\\drawable-mdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_select_dialog_multichoice_material.xml.flat",
         "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\layout\\select_dialog_multichoice_material.xml"
     },
     {
-        "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\f5595fe3935db7edad1ad468fe9da05c\\res\\drawable-mdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+        "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
         "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_design_ic_visibility_off.png.flat",
@@ -48,24 +48,24 @@
         "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\4421a4883bcd662f250195e7c8a1dc18\\res\\drawable\\ic_mtrl_chip_checked_black.xml"
     },
     {
-        "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
-        "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\drawable-xxxhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
+        "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_16dp.png.flat",
+        "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
         "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
         "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\2b974ae88936d7c54eb11ea2f6ab7e29\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
-        "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_16dp.png.flat",
-        "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_16dp.png"
-    },
-    {
-        "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_focused_holo.9.png.flat",
-        "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\drawable-hdpi-v4\\abc_list_focused_holo.9.png"
+        "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
+        "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\drawable-xxxhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
     },
     {
         "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_seek_thumb.xml.flat",
         "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\color\\abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_focused_holo.9.png.flat",
+        "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\drawable-hdpi-v4\\abc_list_focused_holo.9.png"
     },
     {
         "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
@@ -104,12 +104,12 @@
         "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\layout\\abc_search_view.xml"
     },
     {
-        "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v26_abc_screen_toolbar.xml.flat",
-        "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\layout-v26\\abc_screen_toolbar.xml"
-    },
-    {
         "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item_header.xml.flat",
         "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\4421a4883bcd662f250195e7c8a1dc18\\res\\layout\\design_navigation_item_header.xml"
+    },
+    {
+        "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v26_abc_screen_toolbar.xml.flat",
+        "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\layout-v26\\abc_screen_toolbar.xml"
     },
     {
         "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_light_focused.xml.flat",
@@ -136,12 +136,12 @@
         "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\f5595fe3935db7edad1ad468fe9da05c\\res\\drawable\\common_google_signin_btn_text_disabled.xml"
     },
     {
-        "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_out_top.xml.flat",
-        "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\anim\\abc_slide_out_top.xml"
-    },
-    {
         "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_pressed_holo_light.9.png.flat",
         "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_out_top.xml.flat",
+        "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\anim\\abc_slide_out_top.xml"
     },
     {
         "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_exit.xml.flat",
@@ -172,12 +172,12 @@
         "source": "V:\\AndroidProjects\\Aplicativo-master\\app\\src\\main\\res\\drawable-v21\\ic_menu_gallery.xml"
     },
     {
-        "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_ripple_color.xml.flat",
-        "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\4421a4883bcd662f250195e7c8a1dc18\\res\\color\\mtrl_tabs_ripple_color.xml"
-    },
-    {
         "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_ripple_color.xml.flat",
+        "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\4421a4883bcd662f250195e7c8a1dc18\\res\\color\\mtrl_tabs_ripple_color.xml"
     },
     {
         "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_switch_thumb_material.xml.flat",
@@ -188,12 +188,12 @@
         "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
-        "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_app_bar_lista_area.xml.flat",
-        "source": "V:\\AndroidProjects\\Aplicativo-master\\app\\src\\main\\res\\layout\\app_bar_lista_area.xml"
-    },
-    {
         "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\drawable-mdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_app_bar_lista_area.xml.flat",
+        "source": "V:\\AndroidProjects\\Aplicativo-master\\app\\src\\main\\res\\layout\\app_bar_lista_area.xml"
     },
     {
         "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_switch_track.xml.flat",
@@ -268,12 +268,12 @@
         "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\4421a4883bcd662f250195e7c8a1dc18\\res\\drawable-v21\\avd_show_password.xml"
     },
     {
-        "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\f5595fe3935db7edad1ad468fe9da05c\\res\\drawable-xhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
-    },
-    {
         "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
         "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\f5595fe3935db7edad1ad468fe9da05c\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
+        "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\f5595fe3935db7edad1ad468fe9da05c\\res\\drawable-xhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_lista_conversa.xml.flat",
@@ -340,20 +340,20 @@
         "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\drawable-mdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_content_include.xml.flat",
-        "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\layout\\abc_screen_content_include.xml"
-    },
-    {
         "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png"
     },
     {
-        "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "V:\\AndroidProjects\\Aplicativo-master\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_content_include.xml.flat",
+        "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\layout\\abc_screen_content_include.xml"
     },
     {
         "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_avd_hide_password.xml.flat",
         "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\4421a4883bcd662f250195e7c8a1dc18\\res\\drawable-v21\\avd_hide_password.xml"
+    },
+    {
+        "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "V:\\AndroidProjects\\Aplicativo-master\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
@@ -392,12 +392,12 @@
         "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
-        "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_lista_mensagem.xml.flat",
-        "source": "V:\\AndroidProjects\\Aplicativo-master\\app\\src\\main\\res\\layout\\activity_lista_mensagem.xml"
-    },
-    {
         "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_cascading_menu_item_layout.xml.flat",
         "source": "C:\\Users\\Vinicius\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac5debf9c19574c24f9c60fcc906d180\\res\\layout\\abc_cascading_menu_item_layout.xml"
+    },
+    {
+        "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_lista_mensagem.xml.flat",
+        "source": "V:\\AndroidProjects\\Aplicativo-master\\app\\src\\main\\res\\layout\\activity_lista_mensagem.xml"
     },
     {
         "merged": "V:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_btn_colored_borderless_text_material.xml.flat",

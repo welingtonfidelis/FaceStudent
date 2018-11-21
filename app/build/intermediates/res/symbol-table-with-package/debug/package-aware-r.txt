@@ -1176,6 +1176,7 @@ id fb_editar_usuario
 id fb_enviar_mensagem
 id fb_enviar_post
 id fb_mensagem
+id fb_mensagem_usuario
 id fb_novo_post
 id fb_sair_mensagem
 id fill

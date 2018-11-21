@@ -91,7 +91,7 @@ public class ListaConversa extends AppCompatActivity {
                     ReferencesHelper.getDatabaseReference().child("Usuario").
                             child(m.getIdDestinatario()).addValueEventListener(usuarioEventListener);
                     ReferencesHelper.getDatabaseReference().child("Usuario").
-                           child(m.getIdRemetente()).addValueEventListener(usuarioEventListener);
+                            child(m.getIdRemetente()).addValueEventListener(usuarioEventListener);
 
 
                 }
@@ -132,7 +132,7 @@ public class ListaConversa extends AppCompatActivity {
                 finish();
                 return true;
             case R.id.action_areas:
-                    intent = new Intent(ListaConversa.this, ListaArea.class);
+                intent = new Intent(ListaConversa.this, ListaArea.class);
                 startActivity(intent);
                 return true;
             case R.id.action_conversas:
