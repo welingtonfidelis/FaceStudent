@@ -68,10 +68,10 @@ public class MensagemAdapter extends RecyclerView.Adapter<MensagemAdapter.ViewHo
         viewHolder.texto.setText(m.getTexto());
 
         if(m.getIdDestinatario().equals(ReferencesHelper.getFirebaseAuth().getUid())){
-            viewHolder.layout.setBackgroundColor(Color.GRAY);
+            viewHolder.layout.setBackgroundColor(Color.parseColor("#FFFAFA"));
         }
         else{
-            viewHolder.layout.setBackgroundColor(Color.GREEN);
+            viewHolder.layout.setBackgroundColor(Color.parseColor("#98FB98"));
         }
     }
 

@@ -68,7 +68,7 @@ public class ListaArea extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
+        lista_area.clear();
         areaEventListener = new ValueEventListener() {
             @Override
             public void onDataChange(com.google.firebase.database.DataSnapshot dataSnapshot) {
@@ -159,6 +159,7 @@ public class ListaArea extends AppCompatActivity
                         Intent it = new Intent(ListaArea.this, Perfil.class);
                         it.putExtra("USUARIO", gson.toJson(u[0]));
                         startActivity(it);
+                        finish();
                     }
 
                 }

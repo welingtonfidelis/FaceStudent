@@ -211,8 +211,8 @@ public class CadastroHabilidade extends AppCompatActivity {
             }
             //ReferencesHelper.getDatabaseReference().child("Habilidade").cx.getUid()).setValue(lista_habilidade);
             Toast.makeText(CadastroHabilidade.this, "Habilidades cadastras, obrigado.", Toast.LENGTH_SHORT).show();
-            //Intent intent = new Intent(CadastroHabilidade.this, ListaArea.class);
-            //startActivity(intent);
+            Intent intent = new Intent(CadastroHabilidade.this, Perfil.class);
+            startActivity(intent);
             finish();
         }
     }

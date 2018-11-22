@@ -56,7 +56,7 @@ public class CadastroMensagem extends AppCompatActivity {
                     mensagem.setTexto(textoMensagem.getText().toString());
 
                     ReferencesHelper.getDatabaseReference().child("Mensagem").child(mensagem.getId()).setValue(mensagem);
-                    Toast.makeText(CadastroMensagem.this, "Mensagem Enviada", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CadastroMensagem.this, "Mensagem enviada com sucesso!", Toast.LENGTH_SHORT).show();
                     finish();
                 }
             }

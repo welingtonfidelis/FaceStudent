@@ -1239,6 +1239,8 @@ id nome_area_adapter
 id nome_usuario_conversa
 id none
 id normal
+id nota
+id nota_usuario
 id notification_background
 id notification_main_column
 id notification_main_column_container
@@ -1320,7 +1322,6 @@ id textView
 id textView11
 id textView12
 id textView13
-id textView2
 id textView3
 id textView4
 id textView5

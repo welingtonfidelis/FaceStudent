@@ -60,6 +60,7 @@ public class Perfil extends AppCompatActivity {
     private ValueEventListener habilidadeEventListener, postEventListiner, usuarioEventListener;
     private FloatingActionButton novoPost, novaMensagem, conversa;
     private FloatingActionButton editar;
+    private TextView nota;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,6 +84,12 @@ public class Perfil extends AppCompatActivity {
         editar = findViewById(R.id.fb_editar_usuario);
         novaMensagem = findViewById(R.id.fb_mensagem);
         conversa = findViewById(R.id.fb_conversa);
+        nota = findViewById(R.id.nota);
+        if(usuario.getNota_absoluta() == 0)
+            nota.setText(0+"");
+        else
+            nota.setText(String.format("%.2f", usuario.getNota_absoluta()/usuario.getQtd_avaliacoes()));
+
         final Button btn1 = (Button) findViewById(R.id.button1);
 
         if(!usuario.getId().equals(ReferencesHelper.getFirebaseAuth().getUid())){
@@ -106,14 +113,17 @@ public class Perfil extends AppCompatActivity {
                 Intent it = new Intent(getBaseContext(), CadastroUsuario.class);
                 it.putExtra("USUARIO", gson.toJson(usuario));
                 startActivity(it);
+                finish();
             }
         });
+
+
 
         //carregando habilidades do usuario no recycler view
         habilidadeEventListener = new ValueEventListener() {
             @Override
             public void onDataChange(com.google.firebase.database.DataSnapshot dataSnapshot) {
-
+                lista_habilidade.clear();
                 if (dataSnapshot.exists()) {
                     for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
                         Habilidade h = postSnapshot.getValue(Habilidade.class);
@@ -185,6 +195,10 @@ public class Perfil extends AppCompatActivity {
                 Gson gson = new Gson();
                 intent.putExtra("USUARIO", gson.toJson(usuario));
                 startActivity(intent);
+                if(usuario.getNota_absoluta() == 0)
+                    nota.setText(0+"");
+                else
+                    nota.setText(String.format("%.2f", usuario.getNota_absoluta()/usuario.getQtd_avaliacoes()));
             }
         });
 

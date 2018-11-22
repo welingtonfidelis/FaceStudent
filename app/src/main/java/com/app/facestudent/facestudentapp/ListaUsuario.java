@@ -59,7 +59,8 @@ public class ListaUsuario extends AppCompatActivity {
         habilidadeEventListner = new ValueEventListener() {
             @Override
             public void onDataChange(com.google.firebase.database.DataSnapshot dataSnapshot) {
-
+                lista_habilidade.clear();
+                lista_usuario.clear();
                 if (dataSnapshot.exists()) {
                     for(DataSnapshot postSnapshot : dataSnapshot.getChildren()){
                         Habilidade h = postSnapshot.getValue(Habilidade.class);

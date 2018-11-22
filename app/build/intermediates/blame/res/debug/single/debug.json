@@ -16,12 +16,12 @@
         "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/192c4569ecf32f1d874c3b36b9500ad4/res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
-        "merged": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
-        "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/12654dd5fe924ed4899823b457174bfb/res/drawable-mdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
         "merged": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/res/merged/debug/drawable-ldrtl-hdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/12654dd5fe924ed4899823b457174bfb/res/drawable-ldrtl-hdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/12654dd5fe924ed4899823b457174bfb/res/drawable-mdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/res/merged/debug/drawable_abc_ratingbar_material.xml.flat",
@@ -140,12 +140,12 @@
         "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/12654dd5fe924ed4899823b457174bfb/res/drawable-mdpi-v4/abc_ic_star_half_black_48dp.png"
     },
     {
-        "merged": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_googleg_standard_color_18.png.flat",
-        "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/192c4569ecf32f1d874c3b36b9500ad4/res/drawable-mdpi-v4/googleg_standard_color_18.png"
-    },
-    {
         "merged": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/res/merged/debug/drawable-watch-v20_common_google_signin_btn_text_dark_normal.xml.flat",
         "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/62dc216a2bd07c9f51e2d100ce2960c8/res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_googleg_standard_color_18.png.flat",
+        "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/192c4569ecf32f1d874c3b36b9500ad4/res/drawable-mdpi-v4/googleg_standard_color_18.png"
     },
     {
         "merged": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/res/merged/debug/layout_mtrl_layout_snackbar_include.xml.flat",
@@ -168,12 +168,12 @@
         "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/8b32adbcae098043cf2d844d71b14e35/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png"
     },
     {
-        "merged": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/res/merged/debug/drawable_abc_ic_menu_overflow_material.xml.flat",
-        "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/12654dd5fe924ed4899823b457174bfb/res/drawable/abc_ic_menu_overflow_material.xml"
-    },
-    {
         "merged": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/res/merged/debug/layout_abc_alert_dialog_material.xml.flat",
         "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/12654dd5fe924ed4899823b457174bfb/res/layout/abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/res/merged/debug/drawable_abc_ic_menu_overflow_material.xml.flat",
+        "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/12654dd5fe924ed4899823b457174bfb/res/drawable/abc_ic_menu_overflow_material.xml"
     },
     {
         "merged": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -208,12 +208,12 @@
         "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/192c4569ecf32f1d874c3b36b9500ad4/res/drawable-xxhdpi-v4/googleg_standard_color_18.png"
     },
     {
-        "merged": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/8b32adbcae098043cf2d844d71b14e35/res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png"
-    },
-    {
         "merged": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
         "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/12654dd5fe924ed4899823b457174bfb/res/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/8b32adbcae098043cf2d844d71b14e35/res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png"
     },
     {
         "merged": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/res/merged/debug/layout_design_layout_tab_text.xml.flat",
@@ -240,12 +240,12 @@
         "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/12654dd5fe924ed4899823b457174bfb/res/anim/abc_shrink_fade_out_from_bottom.xml"
     },
     {
-        "merged": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/res/merged/debug/layout_abc_alert_dialog_title_material.xml.flat",
-        "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/12654dd5fe924ed4899823b457174bfb/res/layout/abc_alert_dialog_title_material.xml"
-    },
-    {
         "merged": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/res/merged/debug/layout_abc_alert_dialog_title_material.xml.flat",
+        "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/12654dd5fe924ed4899823b457174bfb/res/layout/abc_alert_dialog_title_material.xml"
     },
     {
         "merged": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/res/merged/debug/layout_abc_action_bar_title_item.xml.flat",
@@ -280,12 +280,12 @@
         "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/12654dd5fe924ed4899823b457174bfb/res/drawable-xxhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/res/merged/debug/color_mtrl_tabs_legacy_text_color_selector.xml.flat",
-        "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/99ea293ad36a71dbe56099d1b785ec40/res/color/mtrl_tabs_legacy_text_color_selector.xml"
-    },
-    {
         "merged": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/12654dd5fe924ed4899823b457174bfb/res/drawable-mdpi-v4/abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/res/merged/debug/color_mtrl_tabs_legacy_text_color_selector.xml.flat",
+        "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/99ea293ad36a71dbe56099d1b785ec40/res/color/mtrl_tabs_legacy_text_color_selector.xml"
     },
     {
         "merged": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -300,12 +300,12 @@
         "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/12654dd5fe924ed4899823b457174bfb/res/drawable-mdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/res/merged/debug/color_abc_primary_text_disable_only_material_light.xml.flat",
-        "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/12654dd5fe924ed4899823b457174bfb/res/color/abc_primary_text_disable_only_material_light.xml"
-    },
-    {
         "merged": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/12654dd5fe924ed4899823b457174bfb/res/drawable-xxxhdpi-v4/abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/res/merged/debug/color_abc_primary_text_disable_only_material_light.xml.flat",
+        "source": "/home/welington/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/12654dd5fe924ed4899823b457174bfb/res/color/abc_primary_text_disable_only_material_light.xml"
     },
     {
         "merged": "/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",

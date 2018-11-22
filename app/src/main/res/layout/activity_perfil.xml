@@ -109,7 +109,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:text="Posts"
+                android:text="Últimos Posts"
                 android:textSize="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -175,16 +175,20 @@
                 tools:background="@android:color/holo_orange_light" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/nota"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imgv_foto_perfil"
-                tools:layout_editor_absoluteY="124dp" />
+                android:layout_marginBottom="8dp"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_nome_perfil"
+                app:layout_constraintEnd_toStartOf="@+id/imgv_foto_perfil"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
 
         </android.support.constraint.ConstraintLayout>

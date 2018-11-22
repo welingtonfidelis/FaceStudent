@@ -38,12 +38,14 @@ public class UsuarioAdapter extends RecyclerView.Adapter<UsuarioAdapter.ViewHold
     public class ViewHolder extends RecyclerView.ViewHolder {
         protected TextView nome_usuario;
         protected ImageView foto_usuario;
+        protected TextView nota_usuario;
         protected CardView cardView_usuario;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             nome_usuario = itemView.findViewById(R.id.tv_nome_usuario_adater);
             foto_usuario = itemView.findViewById(R.id.imgv_foto_usuario);
+            nota_usuario = itemView.findViewById(R.id.nota_usuario);
             cardView_usuario = itemView.findViewById(R.id.cardview_usuario);
         }
     }
@@ -60,6 +62,10 @@ public class UsuarioAdapter extends RecyclerView.Adapter<UsuarioAdapter.ViewHold
         final Usuario usuario = lista.get(i);
 
         viewHolder.nome_usuario.setText(usuario.getNome());
+        if(usuario.getNota_absoluta() == 0)
+            viewHolder.nota_usuario.setText(0+"");
+        else
+            viewHolder.nota_usuario.setText(usuario.getNota_absoluta()/usuario.getQtd_avaliacoes()+"");
 
         new DownloadImageTask(viewHolder.foto_usuario).execute(usuario.getFoto());
 

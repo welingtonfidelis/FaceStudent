@@ -48,7 +48,7 @@ public class CadastroPost extends AppCompatActivity {
 
                 ReferencesHelper.getDatabaseReference().child("Post").
                         child(ReferencesHelper.getDatabaseReference().push().getKey()).setValue(post);
-                Toast.makeText(getBaseContext(), "Salvo com sucesso.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getBaseContext(), "Post salvo com sucesso.", Toast.LENGTH_SHORT).show();
                 finish();
             }
         });

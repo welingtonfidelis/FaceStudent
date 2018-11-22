@@ -41,7 +41,8 @@ public class ListaConversa extends AppCompatActivity {
         lista_usuario = new ArrayList<Usuario>();
 
         listView = findViewById(R.id.listview_usuario_conversa);
-
+        lista_mensagem.clear();
+        lista_usuario.clear();
         mensagemEventListener = new ValueEventListener() {
             @Override
             public void onDataChange(final com.google.firebase.database.DataSnapshot dataSnapshot) {
@@ -62,8 +63,8 @@ public class ListaConversa extends AppCompatActivity {
                                 Usuario u;
                                 u = dataSnapshott.getValue(Usuario.class);
                                 u.setId(dataSnapshott.getKey());
-                                for(Usuario lu : lista_usuario){
-                                    if(lu.getId() == u.getId()){
+                                for (Usuario lu : lista_usuario) {
+                                    if (lu.getId() == u.getId()) {
                                         v = true;
                                         break;
                                     }
@@ -110,10 +111,6 @@ public class ListaConversa extends AppCompatActivity {
 
         ReferencesHelper.getDatabaseReference().child("Mensagem").
                 orderByChild("idDestinatario").equalTo(ReferencesHelper.getFirebaseAuth().getUid()).addValueEventListener(mensagemEventListener);
-
-
-
-
 
     }
 
