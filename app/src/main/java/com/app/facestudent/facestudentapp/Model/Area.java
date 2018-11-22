@@ -5,6 +5,7 @@ import com.google.firebase.database.Exclude;
 public class Area {
     private int id;
     private String nome;
+    private boolean ativado;
 
     @Exclude
     public int getId() {
@@ -27,5 +28,15 @@ public class Area {
     @Override
     public String toString() {
         return nome ;
+    }
+
+    @Exclude
+    public boolean isAtivado() {
+        return ativado;
+    }
+
+    @Exclude
+    public void setAtivado(boolean ativado) {
+        this.ativado = ativado;
     }
 }

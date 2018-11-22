@@ -1125,6 +1125,7 @@ id btn_salvar_area
 id button1
 id buttonPanel
 id cancel_action
+id card_view_area
 id cardview_area
 id cardview_usuario
 id cardview_usuario_conversa
@@ -1350,6 +1351,7 @@ id tv_data_mensagem
 id tv_data_post
 id tv_data_post_adapter
 id tv_nome_area_adapter
+id tv_nome_area_cadastro
 id tv_nome_destinatario
 id tv_nome_habilidade_adapter
 id tv_nome_perfil
@@ -1429,6 +1431,7 @@ layout activity_login
 layout activity_perfil
 layout activity_splash_screen
 layout adapter_area_grid
+layout adapter_area_lista
 layout adapter_habilidade
 layout adapter_mensagem
 layout adapter_post

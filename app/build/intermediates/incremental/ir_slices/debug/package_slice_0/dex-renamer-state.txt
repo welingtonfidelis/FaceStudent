@@ -1,4 +1,4 @@
-#Wed Nov 21 19:08:06 BRST 2018
-base.0=V\:\\AndroidProjects\\Aplicativo-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Wed Nov 21 22:18:33 BRST 2018
+base.0=/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex
