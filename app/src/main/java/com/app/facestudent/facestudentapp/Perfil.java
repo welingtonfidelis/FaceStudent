@@ -110,7 +110,7 @@ public class Perfil extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Gson gson = new Gson();
-                Intent it = new Intent(getBaseContext(), CadastroUsuario.class);
+                Intent it = new Intent(Perfil.this, CadastroUsuario.class);
                 it.putExtra("USUARIO", gson.toJson(usuario));
                 startActivity(it);
                 finish();

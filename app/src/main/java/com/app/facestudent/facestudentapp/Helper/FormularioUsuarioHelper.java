@@ -46,7 +46,7 @@ public class FormularioUsuarioHelper {
 
     }
 
-    public Usuario pegaDoFormulario() throws ParseException {
+    public Usuario pegaDoFormulario()  {
         usuario = new Usuario();
 
         if(nome.getText().toString().isEmpty()){
@@ -73,10 +73,16 @@ public class FormularioUsuarioHelper {
             usuario.setGenero("Feminino");
         }
 
-        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH);
-        Date date = formatter.parse(dataNascimento.getText().toString());
+        try{
+            SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH);
+            Date date = formatter.parse(dataNascimento.getText().toString());
+            usuario.setDataNascimento(date.getTime());
+        }
+        catch (Exception e) {
 
-        usuario.setDataNascimento(date.getTime());
+        }
+
+
 
         return usuario;
     }

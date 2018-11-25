@@ -29,6 +29,7 @@ public class CadastroUsuario extends AppCompatActivity {
 
         btn_salvar = findViewById(R.id.btn_proximo);
 
+
         formularioUsuarioHelper = new FormularioUsuarioHelper(CadastroUsuario.this);
 
         if(usuario != null){
@@ -38,20 +39,14 @@ public class CadastroUsuario extends AppCompatActivity {
         btn_salvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                try {
                     Intent intent = new Intent(CadastroUsuario.this, CadastroHabilidade.class);
-                    /*if(usuario != null) {
-                        intent.putExtra("ATIVADO", true);
-                    }*/
                     usuario = formularioUsuarioHelper.pegaDoFormulario();
-                    ReferencesHelper.getDatabaseReference().child("Usuario").child(usuario.getId()).setValue(usuario);
-                    Toast.makeText(getBaseContext(), "Salvo com sucesso.", Toast.LENGTH_SHORT).show();
+                    Gson gson = new Gson();
+                    intent.putExtra("USUARIO", gson.toJson(usuario));
 
                     startActivity(intent);
                     finish();
-                } catch (ParseException e) {
-                    e.printStackTrace();
-                }
+
             }
         });
 

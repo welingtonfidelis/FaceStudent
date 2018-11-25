@@ -56,57 +56,7 @@ public class ListaUsuario extends AppCompatActivity {
             nome_area = extras.getString("NOMEAREA");
         }
 
-        habilidadeEventListner = new ValueEventListener() {
-            @Override
-            public void onDataChange(com.google.firebase.database.DataSnapshot dataSnapshot) {
-                lista_habilidade.clear();
-                lista_usuario.clear();
-                if (dataSnapshot.exists()) {
-                    for(DataSnapshot postSnapshot : dataSnapshot.getChildren()){
-                        Habilidade h = postSnapshot.getValue(Habilidade.class);
-                        lista_habilidade.add(h);
-                    }
-                }
-
-                //lista_usuario.clear();
-                for(Habilidade h: lista_habilidade){
-                    usuarioEventListener = new ValueEventListener() {
-                        @Override
-                        public void onDataChange(com.google.firebase.database.DataSnapshot dataSnapshot) {
-                            if (dataSnapshot.exists()) {
-                                    Usuario u = dataSnapshot.getValue(Usuario.class);
-                                    u.setId(dataSnapshot.getKey());
-                                    lista_usuario.add(u);
-                            }
-
-                            layoutManager = new LinearLayoutManager(ListaUsuario.this);
-                            listView_usuarios.setHasFixedSize(true);
-                            listView_usuarios.setLayoutManager(layoutManager);
-
-                            UsuarioAdapter usuarioAdapter = new UsuarioAdapter(ListaUsuario.this, lista_usuario);
-                            listView_usuarios.setAdapter(usuarioAdapter);
-
-                        }
-
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                        }
-
-                    };
-                    ReferencesHelper.getDatabaseReference().child("Usuario").child(h.getIdUsuario()).addValueEventListener(usuarioEventListener);
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-
-
-        };
-        ReferencesHelper.getDatabaseReference().child("Habilidade").orderByChild("nome").equalTo(nome_area).addValueEventListener(habilidadeEventListner);
-
+        //carregaUsuario();
     }
 
     @Override
@@ -140,15 +90,76 @@ public class ListaUsuario extends AppCompatActivity {
         return (super.onOptionsItemSelected(menuItem));
     }
 
+    public void carregaUsuario(){
+        habilidadeEventListner = new ValueEventListener() {
+            @Override
+            public void onDataChange(com.google.firebase.database.DataSnapshot dataSnapshot) {
+                lista_habilidade.clear();
+                lista_usuario.clear();
+                listView_usuarios.getRecycledViewPool().clear();
+                if (dataSnapshot.exists()) {
+                    for(DataSnapshot postSnapshot : dataSnapshot.getChildren()){
+                        Habilidade h = postSnapshot.getValue(Habilidade.class);
+                        lista_habilidade.add(h);
+                    }
+                }
+
+                //lista_usuario.clear();
+                for(Habilidade h: lista_habilidade){
+                    usuarioEventListener = new ValueEventListener() {
+                        @Override
+                        public void onDataChange(com.google.firebase.database.DataSnapshot dataSnapshot) {
+                            if (dataSnapshot.exists()) {
+                                Usuario u = dataSnapshot.getValue(Usuario.class);
+                                u.setId(dataSnapshot.getKey());
+                                lista_usuario.add(u);
+                            }
+
+                            layoutManager = new LinearLayoutManager(ListaUsuario.this);
+                            listView_usuarios.setHasFixedSize(true);
+                            listView_usuarios.setLayoutManager(layoutManager);
+
+                            UsuarioAdapter usuarioAdapter = new UsuarioAdapter(ListaUsuario.this, lista_usuario);
+                            listView_usuarios.setAdapter(usuarioAdapter);
+
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+
+                    };
+                    ReferencesHelper.getDatabaseReference().child("Usuario").child(h.getIdUsuario()).addValueEventListener(usuarioEventListener);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+
+
+        };
+        ReferencesHelper.getDatabaseReference().child("Habilidade").orderByChild("nome").equalTo(nome_area).addValueEventListener(habilidadeEventListner);
+
+    }
+
     @Override
     protected void onDestroy() {
-        Log.e("DESTROY",  "Destroy: "+nome_area);
+        Log.e("DESTROY",  "Destruido");
         super.onDestroy();
     }
 
     @Override
     protected void onResume() {
-        Log.e("DESTROY",  "Resume: "+nome_area);
+        Log.e("RESUME",  "RESUMIDO");
         super.onResume();
+        lista_habilidade.clear();
+        lista_usuario.clear();
+        listView_usuarios.getRecycledViewPool().clear();
+        carregaUsuario();
     }
+
+
 }

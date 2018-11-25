@@ -84,7 +84,6 @@ public class AreaAdapterLista extends RecyclerView.Adapter<AreaAdapterLista.View
                 else{
                     viewHolder.cardView.setBackgroundColor(Color.WHITE);
                 }
-                Log.e("ATIVADO", area.getNome()+area.isAtivado());
             }
         });
     }

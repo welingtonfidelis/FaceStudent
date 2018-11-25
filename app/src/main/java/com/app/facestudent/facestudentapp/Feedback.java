@@ -52,7 +52,9 @@ public class Feedback extends AppCompatActivity {
                             .setPositiveButton("OK", null).show();
                 }else{
                     usuario.setNota_absoluta(nota);
-                    ReferencesHelper.getDatabaseReference().child("Usuario").child(usuario.getId()).setValue(usuario);
+                    ReferencesHelper.getDatabaseReference().child("Usuario").child(usuario.getId()).child("nota_absoluta").setValue(usuario.getNota_absoluta());
+                    ReferencesHelper.getDatabaseReference().child("Usuario").child(usuario.getId()).child("qtd_avaliacoes").setValue(usuario.getQtd_avaliacoes()+1);
+
                     Toast.makeText(Feedback.this, "Obrigado!.", Toast.LENGTH_LONG).show();
                     finish();
                 }

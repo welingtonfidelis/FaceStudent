@@ -1,40 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
     abi="armeabi-v7a,armeabi"
-    api-level="23"
-    build-mode="COLD"
-    density="xhdpi"
+    api-level="24"
+    build-mode="HOT_WARM"
+    density="xxhdpi"
     format="10"
-    ir-eligibility="COMPATIBLE"
     plugin-version="3.2.1"
-    timestamp="1542892265136"
+    timestamp="1542979320649"
     token="8727330748065092780"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="307" />
+        duration="259" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="16" />
     <task
         name="instant-run-transform"
-        duration="26" />
+        duration="19" />
     <task
         name="verifier"
-        duration="6" />
+        duration="2" />
 
     <artifact
-        location="/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-        type="SPLIT_MAIN" />
+        location="/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
 
     <build
         build-mode="FULL"
-        timestamp="1542890152884"
+        timestamp="1542979016166"
         verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
         <artifact
             location="/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
@@ -42,31 +41,28 @@
             location="/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            location="/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
             location="/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            location="/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
             location="/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            location="/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
             location="/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
@@ -74,24 +70,28 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1542892180103"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1542892265136"
+        ir-eligibility="METHOD_ADDED"
+        timestamp="1542979142839"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1542979221106"
+        verifier="COMPATIBLE" >
         <artifact
-            location="/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
+            location="/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/builds/debug/1542979221106/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1542979320649"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/welington/Documents/ProjetosAndroid/Aplicativo/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

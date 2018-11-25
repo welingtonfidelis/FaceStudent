@@ -159,7 +159,7 @@ public class ListaArea extends AppCompatActivity
                         Intent it = new Intent(ListaArea.this, Perfil.class);
                         it.putExtra("USUARIO", gson.toJson(u[0]));
                         startActivity(it);
-                        finish();
+                        //finish();
                     }
 
                 }

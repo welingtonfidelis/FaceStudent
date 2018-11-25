@@ -65,7 +65,7 @@ public class UsuarioAdapter extends RecyclerView.Adapter<UsuarioAdapter.ViewHold
         if(usuario.getNota_absoluta() == 0)
             viewHolder.nota_usuario.setText(0+"");
         else
-            viewHolder.nota_usuario.setText(usuario.getNota_absoluta()/usuario.getQtd_avaliacoes()+"");
+            viewHolder.nota_usuario.setText(String.format("%.2f", usuario.getNota_absoluta()/usuario.getQtd_avaliacoes()));
 
         new DownloadImageTask(viewHolder.foto_usuario).execute(usuario.getFoto());
 

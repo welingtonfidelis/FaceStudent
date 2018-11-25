@@ -24,9 +24,11 @@ import com.app.facestudent.facestudentapp.Adapter.HabilidadeAdapter;
 import com.app.facestudent.facestudentapp.Helper.ReferencesHelper;
 import com.app.facestudent.facestudentapp.Model.Area;
 import com.app.facestudent.facestudentapp.Model.Habilidade;
+import com.app.facestudent.facestudentapp.Model.Usuario;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
+import com.google.gson.Gson;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,6 +39,7 @@ public class CadastroHabilidade extends AppCompatActivity {
     private Button pular, salvar;
     private ValueEventListener areaEventListener;
     private List<Habilidade> lista_hablidade_usuario;
+    private Usuario usuario;
 
     private List<Area> lista_area, lista_area_selecionada;
     List<Habilidade> lista_habilidade = new ArrayList<Habilidade>();
@@ -46,9 +49,12 @@ public class CadastroHabilidade extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro_area);
 
+        Gson gson = new Gson();
+        usuario = gson.fromJson(getIntent().getStringExtra("USUARIO"), Usuario.class);
+
         boas_vindas = findViewById(R.id.tv_bem_vindo);
         listView_area = findViewById(R.id.lista_area);
-        //pular = findViewById(R.id.btn_pular);
+        pular = findViewById(R.id.btn_pular);
         salvar = findViewById(R.id.btn_salvar_area);
 
         lista_area = new ArrayList<Area>();
@@ -56,12 +62,6 @@ public class CadastroHabilidade extends AppCompatActivity {
         lista_hablidade_usuario = new ArrayList<Habilidade>();
 
         boas_vindas.setText("Bem vindo" + " " + ReferencesHelper.getFirebaseAuth().getCurrentUser().getDisplayName());
-
-        //boolean ativado = getIntent().getExtras().getBoolean("ATIVADO");
-
-        /*if(ativado){
-            carregaAreas();
-        }*/
 
         ValueEventListener habilidadeEventListener = new ValueEventListener() {
             @Override
@@ -104,31 +104,6 @@ public class CadastroHabilidade extends AppCompatActivity {
                     AreaAdapterLista adapter = new AreaAdapterLista(CadastroHabilidade.this, lista_area, lista_hablidade_usuario);
                     listView_area.setAdapter(adapter);
 
-                    /*AreaAdapter adapter = new AreaAdapter(lista_area, CadastroHabilidade.this);
-                    listView_area.setAdapter(adapter);
-
-                    listView_area.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                        @Override
-                        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                            ColorDrawable colorView = (ColorDrawable) listView_area.getChildAt(position).getBackground();
-                            if (colorView == null) {
-                                listView_area.getChildAt(position).setBackgroundColor(Color.WHITE);
-                            }
-                            colorView = (ColorDrawable) listView_area.getChildAt(position).getBackground();
-                            if (colorView.getColor() == Color.GREEN) {
-                                listView_area.getChildAt(position).setBackgroundColor(Color.WHITE);
-
-                                Area a = (Area) parent.getItemAtPosition(position);
-                                lista_area_selecionada.remove(a);
-                            } else {
-                                listView_area.getChildAt(position).setBackgroundColor(Color.GREEN);
-
-                                Area a = (Area) parent.getItemAtPosition(position);
-                                lista_area_selecionada.add(a);
-                            }
-                        }
-                    });*/
                 }
             }
 
@@ -146,14 +121,12 @@ public class CadastroHabilidade extends AppCompatActivity {
             }
         });
 
-        /*pular.setOnClickListener(new View.OnClickListener() {
+        pular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CadastroHabilidade.this, ListaArea.class);
-                startActivity(intent);
                 finish();
             }
-        });*/
+        });
     }
 
     public void exibeAlerta() {
@@ -209,46 +182,14 @@ public class CadastroHabilidade extends AppCompatActivity {
             for(Habilidade habilidade: lista_habilidade){
                 ReferencesHelper.getDatabaseReference().child("Habilidade").child(habilidade.getId()).setValue(habilidade);
             }
+            ReferencesHelper.getDatabaseReference().child("Usuario").child(usuario.getId()).setValue(usuario);
             //ReferencesHelper.getDatabaseReference().child("Habilidade").cx.getUid()).setValue(lista_habilidade);
             Toast.makeText(CadastroHabilidade.this, "Habilidades cadastras, obrigado.", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(CadastroHabilidade.this, Perfil.class);
-            startActivity(intent);
+            //Intent intent = new Intent(CadastroHabilidade.this, Perfil.class);
+            //startActivity(intent);
             finish();
         }
     }
-
-   /* public void carregaAreas(){
-        //carregando habilidades do usuario no recycler view
-        ValueEventListener habilidadeEventListener = new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                AreaAdapter adapter = new AreaAdapter(lista_area, CadastroHabilidade.this);
-                listView_area.setAdapter(adapter);
-
-                if (dataSnapshot.exists()) {
-                    for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
-                        Habilidade h = postSnapshot.getValue(Habilidade.class);
-                        Object o = listView_area.getItemAtPosition(0);
-                        o.toString();
-                        lista_habilidade.add(h);
-                    }
-
-
-
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-
-
-        };
-        ReferencesHelper.getDatabaseReference().child("Habilidade").
-                orderByChild("idUsuario").equalTo(ReferencesHelper.getFirebaseAuth().getUid()).addValueEventListener(habilidadeEventListener);
-    }*/
-
 }
 
 
