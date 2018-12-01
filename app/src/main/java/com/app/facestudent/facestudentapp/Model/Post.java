@@ -7,6 +7,7 @@ public class Post {
     private String idUsuario;
     private String titulo;
     private String texto;
+    private String imagem;
     private Long data;
 
     public Post() {
@@ -20,6 +21,14 @@ public class Post {
     @Exclude
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getImagem() {
+        return imagem;
+    }
+
+    public void setImagem(String imagem) {
+        this.imagem = imagem;
     }
 
     public String getTitulo() {

@@ -1198,6 +1198,8 @@ id icon_only
 id ifRoom
 id image
 id imageView
+id imagem_post
+id imagv_foto_post
 id img_foto_usuario_conversa
 id imgb_enviar
 id imgv_foto_perfil
